@@ -1,0 +1,23 @@
+1
+00:00:00,700 --> 00:00:07,000
+At 8:05 on Monday, an AI agent reviews Project Meridian.
+
+2
+00:00:07,000 --> 00:00:17,500
+The approved budget is $80M. Actual cost is $46M, and estimate to complete is $42M. That puts EAC at $88M: an $8M overrun.
+
+3
+00:00:17,500 --> 00:00:30,000
+Easy alert? Not yet. Actuals are 36 hours old. 900 contractor hours await approval. A $6M commitment may already be included in the forecast—or it may not. Exchange rates have moved.
+
+4
+00:00:30,000 --> 00:00:40,500
+The same screen can now imply exposure between $8M and $15.4M.
+
+5
+00:00:40,500 --> 00:00:51,000
+Do not declare an overrun. Ask for validation. Show the timestamp, unresolved transactions, commitment treatment, currency assumptions and resulting range.
+
+6
+00:00:51,000 --> 00:01:00,000
+The first job of a financially governed agent is to know when the evidence is strong enough to interrupt—and when uncertainty itself is the alert.

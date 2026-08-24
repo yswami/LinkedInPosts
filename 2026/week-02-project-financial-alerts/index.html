@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A fictional, interactive enterprise PPM experiment showing why a reported project overrun may require data validation before an alert.">
+  <meta property="og:title" content="Is the $8M project overrun real?">
+  <meta property="og:description" content="Change the evidence behind Project Meridian and see whether the result is a validated signal or a request to validate the data.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yswami.github.io/LinkedInPosts/2026/week-02-project-financial-alerts/">
+  <link rel="canonical" href="https://yswami.github.io/LinkedInPosts/2026/week-02-project-financial-alerts/">
+  <link rel="stylesheet" href="lab.css?v=20260824">
+  <title>Project Financial Alert Lab · Day 1</title>
+</head>
+<body>
+  <a class="skip-link" href="#experiment">Skip to the experiment</a>
+
+  <header class="site-header">
+    <a class="brand" href="../../index.html" aria-label="LinkedIn Posts home">
+      <span>PF</span>
+      <strong>Project Financial Alert Lab</strong>
+    </a>
+    <nav aria-label="Page navigation">
+      <a href="day1-story.html">Watch the 60-second story</a>
+      <a href="#method">How it works</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Day 1 of 5 · A five-minute experiment</p>
+        <h1 id="page-title">The $8M overrun that might not exist.</h1>
+        <p class="hero-lead">A project screen shows a clear cost variance. The evidence underneath it is anything but clear.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#experiment">Test the evidence</a>
+          <a class="button secondary" href="day1-story.html">Watch the story</a>
+        </div>
+        <p class="privacy-note">Fictional data · No sign-in · No API · Nothing stored</p>
+      </div>
+
+      <article class="signal-card" aria-label="Project Meridian reported financial position">
+        <div class="signal-topline">
+          <span>PROJECT MERIDIAN</span>
+          <span class="status-chip">Potential risk</span>
+        </div>
+        <div class="metric-grid">
+          <div><span>Approved budget</span><strong>$80M</strong></div>
+          <div><span>Actual cost</span><strong>$46M</strong></div>
+          <div><span>ETC</span><strong>$42M</strong></div>
+          <div class="emphasis"><span>Reported EAC</span><strong>$88M</strong></div>
+        </div>
+        <div class="reported-variance">
+          <span>Apparent overrun</span>
+          <strong>+$8M</strong>
+        </div>
+        <p>Would you alert the project manager?</p>
+      </article>
+    </section>
+
+    <section class="experiment" id="experiment" aria-labelledby="experiment-title">
+      <div class="section-heading">
+        <p class="eyebrow">The experiment</p>
+        <h2 id="experiment-title">Inspect what the $88M leaves unresolved.</h2>
+        <p>Resolve four evidence questions. The calculation updates locally in your browser.</p>
+      </div>
+
+      <div class="experiment-grid">
+        <form class="evidence-panel" id="evidence-form">
+          <fieldset class="freshness-control">
+            <legend><span>1</span> How fresh are the actual costs?</legend>
+            <div class="range-row">
+              <input id="actuals-age" type="range" min="0" max="72" step="1" value="36">
+              <output id="actuals-age-value" for="actuals-age">36 hours</output>
+            </div>
+            <p>For this experiment, data older than 24 hours requires validation.</p>
+          </fieldset>
+
+          <fieldset>
+            <legend><span>2</span> Are 900 pending contractor hours represented?</legend>
+            <div class="segmented-control">
+              <label><input type="radio" name="timecards" value="unknown" checked><span>Unknown</span></label>
+              <label><input type="radio" name="timecards" value="included"><span>Included</span></label>
+              <label><input type="radio" name="timecards" value="not-included"><span>Not included</span></label>
+            </div>
+            <p>Illustrative potential cost: $0.171M.</p>
+          </fieldset>
+
+          <fieldset>
+            <legend><span>3</span> Is the $6M commitment already reflected in ETC?</legend>
+            <div class="segmented-control">
+              <label><input type="radio" name="commitments" value="unknown" checked><span>Unknown</span></label>
+              <label><input type="radio" name="commitments" value="included"><span>Included</span></label>
+              <label><input type="radio" name="commitments" value="not-included"><span>Not included</span></label>
+            </div>
+            <p>Adding it again without reconciliation could double count the exposure.</p>
+          </fieldset>
+
+          <fieldset>
+            <legend><span>4</span> Is the $1.2M currency impact reflected?</legend>
+            <div class="segmented-control">
+              <label><input type="radio" name="currency" value="unknown" checked><span>Unknown</span></label>
+              <label><input type="radio" name="currency" value="included"><span>Included</span></label>
+              <label><input type="radio" name="currency" value="not-included"><span>Not included</span></label>
+            </div>
+            <p>The value represents an illustrative project-currency exposure.</p>
+          </fieldset>
+
+          <div class="form-actions">
+            <button class="button primary" type="submit">Evaluate the signal</button>
+            <button class="button tertiary" id="reconcile" type="button">Use reconciled records</button>
+            <button class="text-button" id="reset" type="reset">Reset</button>
+          </div>
+        </form>
+
+        <aside class="decision-panel" id="decision-panel" aria-labelledby="decision-title" tabindex="-1">
+          <div class="decision-label">Current conclusion</div>
+          <div class="decision-status provisional" id="decision-status">VALIDATE DATA</div>
+          <h3 id="decision-title">Do not call this a confirmed $8M overrun.</h3>
+
+          <dl class="decision-metrics">
+            <div><dt>Reported EAC</dt><dd>$88.0M</dd></div>
+            <div><dt>Evidence-adjusted range</dt><dd id="eac-range">$88.0M–$95.4M</dd></div>
+            <div><dt>Potential variance</dt><dd id="variance-range">+$8.0M–+$15.4M</dd></div>
+          </dl>
+
+          <div class="readiness-block">
+            <div class="readiness-heading">
+              <strong>Evidence readiness</strong>
+              <span id="readiness-count">0 of 4 resolved</span>
+            </div>
+            <ul id="readiness-list">
+              <li data-check="freshness"><span aria-hidden="true">○</span>Actual-cost freshness</li>
+              <li data-check="timecards"><span aria-hidden="true">○</span>Pending labor treatment</li>
+              <li data-check="commitments"><span aria-hidden="true">○</span>Commitment treatment</li>
+              <li data-check="currency"><span aria-hidden="true">○</span>Currency alignment</li>
+            </ul>
+          </div>
+
+          <div class="decision-explanation" aria-live="polite" aria-atomic="true">
+            <strong>Why</strong>
+            <ul id="decision-reasons"></ul>
+          </div>
+
+          <p class="day-boundary"><strong>Day 1 boundary:</strong> validate the financial signal. Whether it is important enough to alert is a separate policy decision for Day 2.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="method" id="method" aria-labelledby="method-title">
+      <div class="section-heading">
+        <p class="eyebrow">Implementation pattern</p>
+        <h2 id="method-title">Separate the number from the evidence behind it.</h2>
+      </div>
+      <div class="method-grid">
+        <article><span>01</span><h3>Calculate</h3><p>Start with the deterministic financial position: budget, actuals, ETC and reported EAC.</p></article>
+        <article><span>02</span><h3>Validate</h3><p>Check timestamps, pending transactions, commitment treatment, currency and forecast version.</p></article>
+        <article><span>03</span><h3>Classify</h3><p>Return a validated signal or a data-validation request. Do not let an LLM invent the status.</p></article>
+        <article><span>04</span><h3>Explain</h3><p>Use AI to communicate the range, unresolved evidence and appropriate next step.</p></article>
+      </div>
+    </section>
+
+    <section class="guardrail" aria-label="Experiment guardrail">
+      <strong>This lab deliberately stops before alerting.</strong>
+      <p>It teaches signal validation, not a universal threshold. All values and rules are fictional and illustrative.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Independent educational project · No customer data · Not representative of any employer or product roadmap</p>
+    <a href="https://github.com/yswami/LinkedInPosts/tree/main/2026/week-02-project-financial-alerts">View source on GitHub</a>
+  </footer>
+
+  <script src="lab.js?v=20260824"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+:root {
+  --ink: #1e2a25;
+  --muted: #5f6d66;
+  --paper: #f7f3eb;
+  --panel: #fffdf8;
+  --line: #d8d0c2;
+  --forest: #1f6654;
+  --forest-dark: #164a3e;
+  --forest-soft: #dcebe5;
+  --coral: #c95d45;
+  --coral-soft: #f4ddd6;
+  --gold: #c4933f;
+  --gold-soft: #f4ead3;
+  --shadow: 0 26px 70px rgba(38, 43, 37, 0.1);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  min-width: 320px;
+  margin: 0;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 88% 5%, rgba(196, 147, 63, 0.2), transparent 28rem),
+    radial-gradient(circle at 4% 55%, rgba(31, 102, 84, 0.1), transparent 26rem),
+    var(--paper);
+  font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.55;
+}
+
+a { color: inherit; }
+
+.site-header,
+main,
+footer {
+  width: min(calc(100% - 2rem), 1160px);
+  margin-inline: auto;
+}
+
+.site-header {
+  display: flex;
+  min-height: 76px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  border-bottom: 1px solid rgba(216, 208, 194, 0.8);
+}
+
+.brand { display: flex; gap: 0.75rem; align-items: center; text-decoration: none; }
+.brand span { display: grid; width: 38px; height: 38px; place-items: center; color: #fff; background: var(--forest); border-radius: 10px; font-size: 0.8rem; font-weight: 850; }
+.github-link { color: var(--forest-dark); font-size: 0.88rem; font-weight: 760; text-underline-offset: 0.2em; }
+
+.hero { max-width: 950px; padding: clamp(5rem, 12vw, 10rem) 0 clamp(5rem, 9vw, 8rem); }
+.eyebrow { margin: 0 0 1rem; color: var(--coral); font-size: 0.78rem; font-weight: 850; letter-spacing: 0.14em; text-transform: uppercase; }
+
+h1,
+h2,
+h3,
+blockquote {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  line-height: 0.98;
+}
+
+h1 { margin: 0; font-size: clamp(4rem, 10vw, 8.5rem); }
+.hero > p:last-child { max-width: 760px; margin: 1.8rem 0 0; color: var(--muted); font-size: clamp(1.1rem, 2vw, 1.35rem); }
+
+.weeks { padding-bottom: 8rem; }
+.section-heading h2 { margin: 0; font-size: clamp(2.8rem, 6vw, 5.5rem); }
+.week-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; margin-top: 2.5rem; }
+
+.week-card {
+  display: flex;
+  min-height: 460px;
+  flex-direction: column;
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  background: rgba(255, 253, 248, 0.9);
+  border: 1px solid var(--line);
+  border-radius: 26px;
+  box-shadow: var(--shadow);
+}
+
+.week-card.active { background: var(--forest-dark); color: #fff; }
+.card-topline { display: flex; justify-content: space-between; gap: 1rem; font-size: 0.75rem; font-weight: 850; letter-spacing: 0.1em; text-transform: uppercase; }
+.card-topline span:last-child { padding: 0.35rem 0.6rem; color: var(--forest-dark); background: var(--forest-soft); border-radius: 999px; letter-spacing: 0.04em; }
+.active .card-topline span:last-child { color: #5f491f; background: var(--gold-soft); }
+.week-card h3 { max-width: 520px; margin: 4rem 0 1rem; font-size: clamp(2.4rem, 5vw, 4.3rem); }
+.week-card p { margin: 0; color: var(--muted); }
+.active p { color: rgba(255, 255, 255, 0.72); }
+.card-meta { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 2rem; }
+.card-meta span { padding: 0.45rem 0.65rem; color: var(--forest-dark); background: var(--forest-soft); border-radius: 999px; font-size: 0.75rem; font-weight: 740; }
+.active .card-meta span { color: rgba(255, 255, 255, 0.82); background: rgba(255, 255, 255, 0.1); }
+.week-card > a { margin-top: auto; padding-top: 3rem; color: var(--coral); font-weight: 820; text-underline-offset: 0.25em; }
+.active > a { color: #f1ca7a; }
+
+.principle { margin-bottom: 7rem; padding: clamp(2rem, 6vw, 5rem); background: var(--gold-soft); border-radius: 30px; }
+blockquote { max-width: 970px; margin: 0; color: #5f491f; font-size: clamp(2.2rem, 5.2vw, 4.8rem); }
+
+footer { padding: 2rem 0 3rem; color: var(--muted); border-top: 1px solid var(--line); font-size: 0.82rem; }
+footer p { margin: 0; }
+
+a:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
+
+@media (max-width: 760px) {
+  .site-header, main, footer { width: min(calc(100% - 1.2rem), 1160px); }
+  .week-grid { grid-template-columns: 1fr; }
+  .week-card { min-height: 400px; }
+  .github-link { max-width: 100px; text-align: right; }
+}
