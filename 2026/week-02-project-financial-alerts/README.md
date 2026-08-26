@@ -11,6 +11,16 @@ A five-day, fictional Project Meridian story about financially governed autonomy
 
 The Day 1 experiment separates a reported financial number from the evidence behind it. It returns either `VALIDATE DATA` or `VALIDATED SIGNAL`; it does not teach a universal financial-alert threshold.
 
+## Day 2 · Is the validated variance material enough to interrupt someone?
+
+- Read the [LinkedIn-ready post](day-02-linkedin-post.md).
+- Use the [complete publishing package](day-02-publishing-package.md).
+- Run the [Materiality & Routing Lab](https://yswami.github.io/LinkedInPosts/2026/week-02-project-financial-alerts/day2.html).
+- Watch the [60-second narrated story](https://yswami.github.io/LinkedInPosts/2026/week-02-project-financial-alerts/day2-story.html).
+- Upload [`media/project-financial-alert-day2-60s.mp4`](media/project-financial-alert-day2-60s.mp4) with [`day-02-captions.srt`](day-02-captions.srt) to LinkedIn.
+
+The Day 2 experiment keeps the validated +10% signal constant and varies four fictional policy dimensions. It returns `MONITOR`, `REVIEW`, or `ESCALATE`; it does not prescribe a universal materiality formula.
+
 ## Planned story arc
 
 1. Validate the financial signal.

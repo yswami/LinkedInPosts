@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A fictional enterprise PPM experiment showing why a validated project variance needs materiality and routing policy—not one fixed percentage threshold.">
+  <meta property="og:title" content="A fixed 5% threshold is not an alert strategy">
+  <meta property="og:description" content="Keep Project Meridian's validated 10% variance fixed, change its decision context, and see the policy route change.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yswami.github.io/LinkedInPosts/2026/week-02-project-financial-alerts/day2.html">
+  <link rel="canonical" href="https://yswami.github.io/LinkedInPosts/2026/week-02-project-financial-alerts/day2.html">
+  <link rel="stylesheet" href="lab.css?v=20260824">
+  <link rel="stylesheet" href="day2.css?v=20260824">
+  <title>Materiality &amp; Routing Lab · Day 2</title>
+</head>
+<body>
+  <a class="skip-link" href="#experiment">Skip to the experiment</a>
+
+  <header class="site-header">
+    <a class="brand" href="../../index.html" aria-label="LinkedIn Posts home">
+      <span>PF</span>
+      <strong>Project Financial Alert Lab</strong>
+    </a>
+    <nav aria-label="Page navigation">
+      <a href="index.html">Day 1: evidence</a>
+      <a href="day2-story.html">Watch the 60-second story</a>
+      <a href="#method">Policy pattern</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Day 2 of 5 · A five-minute experiment</p>
+        <h1 id="page-title">A fixed 5% threshold is not an alert strategy.</h1>
+        <p class="hero-lead">Project Meridian now has a validated +10% cost variance. Keep the number fixed, change its decision context, and see why the appropriate interruption changes.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#experiment">Test the policy</a>
+          <a class="button secondary" href="day2-story.html">Watch the story</a>
+        </div>
+        <p class="privacy-note">Fictional policy · No sign-in · No API · Nothing stored</p>
+      </div>
+
+      <article class="signal-card policy-signal-card" aria-label="Project Meridian validated financial signal">
+        <div class="signal-topline">
+          <span>PROJECT MERIDIAN</span>
+          <span class="status-chip validated-chip">Validated signal</span>
+        </div>
+        <div class="metric-grid">
+          <div><span>Approved budget</span><strong>$80M</strong></div>
+          <div><span>Validated EAC</span><strong>$88M</strong></div>
+          <div class="emphasis"><span>Absolute variance</span><strong>+$8M</strong></div>
+          <div class="emphasis"><span>Relative variance</span><strong>+10%</strong></div>
+        </div>
+        <div class="reported-variance threshold-rule">
+          <span>Fixed rule</span>
+          <strong>10% &gt; 5% → ALERT?</strong>
+        </div>
+        <p>What else must policy know before interrupting someone?</p>
+      </article>
+    </section>
+
+    <section class="experiment" id="experiment" aria-labelledby="experiment-title">
+      <div class="section-heading">
+        <p class="eyebrow">The experiment</p>
+        <h2 id="experiment-title">Hold the variance constant. Change the context.</h2>
+        <p>This fictional policy classifies the same validated +$8M / +10% signal as MONITOR, REVIEW, or ESCALATE.</p>
+      </div>
+
+      <div class="preset-row" aria-label="Example contexts">
+        <button class="button secondary" id="monitor-preset" type="button">Use monitoring context</button>
+        <button class="button tertiary" id="review-preset" type="button">Use review context</button>
+        <button class="button alert-button" id="escalate-preset" type="button">Use escalation context</button>
+      </div>
+
+      <div class="experiment-grid">
+        <form class="evidence-panel" id="materiality-form">
+          <fieldset>
+            <legend><span>1</span> Policy-recognized contingency remaining</legend>
+            <div class="range-row">
+              <input id="contingency" type="range" min="0" max="12" step="0.5" value="8.5">
+              <output id="contingency-value" for="contingency">$8.5M</output>
+            </div>
+            <p>Illustrative headroom outside the current cost baseline. Organizations govern contingency differently.</p>
+          </fieldset>
+
+          <fieldset>
+            <legend><span>2</span> Consecutive forecast cycles with this variance</legend>
+            <div class="segmented-control">
+              <label><input type="radio" name="cycles" value="1" checked><span>1 cycle</span></label>
+              <label><input type="radio" name="cycles" value="2"><span>2 cycles</span></label>
+              <label><input type="radio" name="cycles" value="3"><span>3+ cycles</span></label>
+            </div>
+            <p>Persistence can distinguish a new signal from a sustained control problem.</p>
+          </fieldset>
+
+          <fieldset>
+            <legend><span>3</span> Time remaining in the decision window</legend>
+            <div class="range-row">
+              <input id="months" type="range" min="1" max="18" step="1" value="12">
+              <output id="months-value" for="months">12 months</output>
+            </div>
+            <p>The same exposure may require different urgency when the opportunity to respond is closing.</p>
+          </fieldset>
+
+          <fieldset>
+            <legend><span>4</span> Consequence if the variance is not addressed</legend>
+            <div class="segmented-control consequence-control">
+              <label><input type="radio" name="consequence" value="standard" checked><span>Standard</span></label>
+              <label><input type="radio" name="consequence" value="critical"><span>Business-critical</span></label>
+              <label><input type="radio" name="consequence" value="contractual"><span>Contractual / regulated</span></label>
+            </div>
+            <p>Policy may elevate consequences that are not visible in the percentage variance alone.</p>
+          </fieldset>
+
+          <div class="form-actions">
+            <button class="button primary" type="submit">Evaluate the policy</button>
+            <button class="text-button" id="reset-day2" type="reset">Reset</button>
+          </div>
+        </form>
+
+        <aside class="decision-panel materiality-decision" id="materiality-decision" aria-labelledby="decision-title" tabindex="-1">
+          <div class="decision-label">Policy classification</div>
+          <div class="decision-status monitor" id="decision-status">MONITOR</div>
+          <h3 id="decision-title">Record the signal without a broad interruption.</h3>
+
+          <dl class="decision-metrics">
+            <div><dt>Validated variance</dt><dd>+$8.0M · +10%</dd></div>
+            <div><dt>Residual exposure</dt><dd id="residual-exposure">$0.0M</dd></div>
+            <div><dt>Illustrative policy score</dt><dd id="policy-score">0 / 8</dd></div>
+          </dl>
+
+          <div class="policy-route" aria-live="polite" aria-atomic="true">
+            <strong>Route</strong>
+            <p id="route-text">Record and re-evaluate in the next forecast cycle.</p>
+          </div>
+
+          <div class="decision-explanation">
+            <strong>Why</strong>
+            <ul id="decision-reasons"></ul>
+          </div>
+
+          <p class="day-boundary"><strong>Day 2 boundary:</strong> classify materiality and route the interruption. Explaining uncertainty without false precision is the Day 3 problem.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="method" id="method" aria-labelledby="method-title">
+      <div class="section-heading">
+        <p class="eyebrow">Implementation pattern</p>
+        <h2 id="method-title">Make the policy deterministic and the explanation adaptive.</h2>
+      </div>
+      <div class="method-grid">
+        <article><span>01</span><h3>Qualify</h3><p>Begin with a validated financial signal, not an unresolved calculation.</p></article>
+        <article><span>02</span><h3>Contextualize</h3><p>Evaluate residual exposure, persistence, time to act, and consequence.</p></article>
+        <article><span>03</span><h3>Classify</h3><p>Use governed rules to assign MONITOR, REVIEW, or ESCALATE.</p></article>
+        <article><span>04</span><h3>Route</h3><p>Let AI explain the classification and tailor it to the policy-defined audience.</p></article>
+      </div>
+    </section>
+
+    <section class="guardrail" aria-label="Experiment guardrail">
+      <strong>The percentage is an input—not the decision.</strong>
+      <p>The values, score, contingency treatment, and routes in this lab are fictional. Real organizations must define them through financial governance, risk policy, decision rights, and audit requirements.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Independent educational project · No customer data · Not representative of any employer or product roadmap</p>
+    <a href="https://github.com/yswami/LinkedInPosts/tree/main/2026/week-02-project-financial-alerts">View source on GitHub</a>
+  </footer>
+
+  <script src="day2.js?v=20260824"></script>
+</body>
+</html>

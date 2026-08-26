@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A narrated 60-second Project Meridian story about why a fixed percentage threshold cannot decide financial alert severity and routing.">
+  <meta property="og:title" content="A fixed 5% threshold is not an alert strategy">
+  <meta property="og:description" content="The same validated 10% project variance can warrant monitoring, review, or escalation depending on its decision context.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yswami.github.io/LinkedInPosts/2026/week-02-project-financial-alerts/day2-story.html">
+  <link rel="canonical" href="https://yswami.github.io/LinkedInPosts/2026/week-02-project-financial-alerts/day2-story.html">
+  <link rel="stylesheet" href="series-animation.css?v=20260824">
+  <link rel="stylesheet" href="day2-story.css?v=20260824">
+  <title>A Fixed 5% Threshold Is Not an Alert Strategy</title>
+</head>
+<body>
+  <a class="skip-link" href="#transcript">Skip animation</a>
+
+  <main class="animation-page">
+    <header class="page-intro">
+      <a class="back-link" href="day2.html">← Back to the materiality experiment</a>
+      <p class="page-eyebrow">When AI agents touch project money · Day 2</p>
+      <h1>A fixed 5% threshold is not an alert strategy</h1>
+      <p>A 60-second Project Meridian story about the decision context behind an interruption.</p>
+    </header>
+
+    <section class="stage-wrap" aria-label="A fixed five-percent threshold is not an alert strategy animation">
+      <div class="stage" id="animation-stage">
+        <audio id="series-audio" preload="metadata" src="media/project-financial-alert-day2-audio.m4a"></audio>
+        <div class="ambient ambient-one" aria-hidden="true"></div>
+        <div class="ambient ambient-two" aria-hidden="true"></div>
+
+        <div class="stage-brand" aria-hidden="true">
+          <span class="stage-mark">PF</span>
+          <span>Financially governed AI · Day 2</span>
+        </div>
+
+        <div class="stage-time" aria-hidden="true">
+          <span id="stage-time-value">00:00</span>
+          <span>/ 01:00</span>
+        </div>
+
+        <section class="scene scene-validated" data-start="0" data-end="9" aria-label="Project Meridian has a validated ten-percent variance">
+          <p class="scene-kicker enter" data-at="0.2">Monday · 08:20</p>
+          <h2 class="scene-title enter" data-at="0.5">The signal is now <em>validated.</em></h2>
+          <div class="validated-card enter" data-at="1.5" data-from="scale">
+            <div><small>Approved budget</small><strong>$80M</strong></div>
+            <span>→</span>
+            <div><small>Validated EAC</small><strong>$88M</strong></div>
+          </div>
+          <div class="variance-lockup enter" data-at="3.8" data-from="scale">
+            <strong>+$8M</strong>
+            <span>+10%</span>
+          </div>
+          <p class="scene-bottom enter" data-at="5.6">Should the agent send a red alert?</p>
+        </section>
+
+        <section class="scene scene-fixed-rule" data-start="8" data-end="20" aria-label="A fixed five-percent rule automatically produces a red alert">
+          <p class="scene-kicker enter" data-at="0.2">The tempting shortcut</p>
+          <h2 class="compact-title enter" data-at="0.5">Turn one percentage into one decision.</h2>
+          <div class="threshold-meter enter" data-at="1.5" data-from="scale">
+            <div class="threshold-labels"><span>0%</span><span>5% threshold</span><span>10% signal</span></div>
+            <div class="threshold-track"><i></i><b></b><em></em></div>
+          </div>
+          <div class="fixed-equation enter" data-at="4.1">
+            <strong>10% &gt; 5%</strong>
+            <span>therefore</span>
+            <b>RED ALERT</b>
+          </div>
+          <p class="rule-warning enter" data-at="7">The rule knows magnitude. It does not know context.</p>
+        </section>
+
+        <section class="scene scene-contexts" data-start="19" data-end="35" aria-label="The same ten-percent variance has two different decision contexts">
+          <p class="scene-kicker enter" data-at="0.2">Same 10% · different interruption</p>
+          <h2 class="compact-title enter" data-at="0.5">The context changes the response.</h2>
+          <div class="context-grid">
+            <article class="context-card monitor-context enter" data-at="1.5" data-from="left">
+              <span class="context-status">MONITOR</span>
+              <strong>$8.5M contingency</strong>
+              <ul><li>First forecast cycle</li><li>12 months to act</li><li>Standard consequence</li></ul>
+            </article>
+            <article class="context-card escalate-context enter" data-at="3.3" data-from="right">
+              <span class="context-status">ESCALATE</span>
+              <strong>$1M contingency</strong>
+              <ul><li>Third forecast cycle</li><li>2 months to act</li><li>Contractual exposure</li></ul>
+            </article>
+          </div>
+          <div class="same-signal enter" data-at="7.5"><span>Signal in both cases</span><strong>+$8M · +10%</strong></div>
+        </section>
+
+        <section class="scene scene-dimensions" data-start="34" data-end="47" aria-label="A materiality policy evaluates four decision dimensions">
+          <p class="scene-kicker enter" data-at="0.2">What policy must evaluate</p>
+          <h2 class="compact-title enter" data-at="0.5">Materiality is multidimensional.</h2>
+          <div class="dimension-grid">
+            <article class="dimension-card enter" data-at="1.4"><span>01</span><strong>Residual exposure</strong><small>After recognized contingency</small></article>
+            <article class="dimension-card enter" data-at="2.4"><span>02</span><strong>Persistence</strong><small>Across forecast cycles</small></article>
+            <article class="dimension-card enter" data-at="3.4"><span>03</span><strong>Time to act</strong><small>Before the window closes</small></article>
+            <article class="dimension-card enter" data-at="4.4"><span>04</span><strong>Consequence</strong><small>Business, contractual, regulatory</small></article>
+          </div>
+          <div class="policy-divider enter" data-at="7">Governed dimensions → transparent severity</div>
+        </section>
+
+        <section class="scene scene-routing" data-start="46" data-end="55.5" aria-label="Deterministic policy classifies and AI explains and routes">
+          <p class="scene-kicker enter" data-at="0.2">Separate policy from language</p>
+          <h2 class="compact-title enter" data-at="0.5">Classify first. Explain second.</h2>
+          <div class="routing-flow">
+            <div class="route-box signal enter" data-at="1.3"><small>Validated signal</small><strong>+$8M · 10%</strong></div>
+            <span class="route-arrow enter" data-at="2">→</span>
+            <div class="route-box policy enter" data-at="2.5"><small>Deterministic policy</small><strong>MONITOR · REVIEW · ESCALATE</strong></div>
+            <span class="route-arrow enter" data-at="3.2">→</span>
+            <div class="route-box ai enter" data-at="3.7"><small>LLM</small><strong>Explain + route</strong></div>
+          </div>
+          <p class="routing-rule enter" data-at="6.2">The LLM communicates the policy. It does not invent it.</p>
+        </section>
+
+        <section class="scene scene-day2-takeaway" data-start="54.5" data-end="60.1" aria-label="A threshold should create a candidate signal rather than make the final alert decision">
+          <p class="scene-kicker enter" data-at="0.2">The Day 2 takeaway</p>
+          <h2 class="takeaway-title enter" data-at="0.5">A threshold should create a candidate signal—not make the final alert decision.</h2>
+          <div class="final-rule enter" data-at="2.7" data-from="scale"><span>Threshold</span><strong>→ Candidate</strong><span>Policy</span><strong>→ Interruption</strong></div>
+          <div class="final-cta enter" data-at="3.8"><span>Try the materiality experiment</span><strong>yswami.github.io/LinkedInPosts/2026/week-02-project-financial-alerts/day2.html</strong></div>
+          <div class="illustrative-note enter" data-at="4.5">Fictional example · Illustrative policy · No customer data</div>
+        </section>
+
+        <div class="stage-progress" aria-hidden="true"><span id="stage-progress-fill"></span></div>
+      </div>
+
+      <div class="player-controls" aria-label="Animation controls">
+        <button id="play-toggle" type="button" aria-pressed="false">Play with sound</button>
+        <button id="restart" type="button">Restart</button>
+        <label class="scrubber-label" for="scrubber">
+          <span class="sr-only">Animation position</span>
+          <input id="scrubber" type="range" min="0" max="60" step="0.05" value="0">
+        </label>
+        <output id="player-status" aria-live="polite">Ready · 00:00</output>
+      </div>
+    </section>
+
+    <section class="transcript" id="transcript" aria-labelledby="transcript-title">
+      <p class="page-eyebrow">Accessible transcript</p>
+      <h2 id="transcript-title">The complete story</h2>
+      <p>Project Meridian is ten percent over budget. Should the agent send a red alert? The obvious answer is yes. It may also be wrong.</p>
+      <p>The project has an eighty-million-dollar budget and a validated eighty-eight-million-dollar estimate at completion: eight million dollars of exposure. A fixed five-percent rule sees only one thing—ten is greater than five.</p>
+      <p>But now look at the decision context. If eight-and-a-half million dollars of recognized contingency remains, the variance appears for the first time, and twelve months remain, monitor. If only one million remains, the variance has persisted for three cycles, two months remain, and a contractual commitment is exposed, escalate.</p>
+      <p>Same project. Same ten percent. Completely different interruption.</p>
+      <p>A useful policy evaluates residual exposure, persistence, time to act, and consequence. Deterministic rules decide monitor, review, or escalate. The LLM explains why and routes it to the right audience.</p>
+      <p>The threshold finds a candidate signal. Context decides whether it deserves attention.</p>
+      <a class="lab-link" href="day2.html">Run the materiality experiment →</a>
+    </section>
+  </main>
+
+  <script src="series-animation.js?v=20260824"></script>
+</body>
+</html>

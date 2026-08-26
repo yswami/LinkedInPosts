@@ -1,0 +1,11 @@
+Project Meridian is ten percent over budget. Should the agent send a red alert? The obvious answer is yes. It may also be wrong.
+
+The project has an eighty-million-dollar budget and a validated eighty-eight-million-dollar estimate at completion: eight million dollars of exposure. A fixed five-percent rule sees only one thing—ten is greater than five.
+
+But now look at the decision context. If eight-and-a-half million dollars of recognized contingency remains, the variance appears for the first time, and twelve months remain, monitor. If only one million remains, the variance has persisted for three cycles, two months remain, and a contractual commitment is exposed, escalate.
+
+Same project. Same ten percent. Completely different interruption.
+
+A useful policy evaluates residual exposure, persistence, time to act, and consequence. Deterministic rules decide monitor, review, or escalate. The LLM explains why and routes it to the right audience.
+
+The threshold finds a candidate signal. Context decides whether it deserves attention.
