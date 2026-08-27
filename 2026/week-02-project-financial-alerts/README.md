@@ -21,6 +21,16 @@ The Day 1 experiment separates a reported financial number from the evidence beh
 
 The Day 2 experiment keeps the validated +10% signal constant and varies four fictional policy dimensions. It returns `MONITOR`, `REVIEW`, or `ESCALATE`; it does not prescribe a universal materiality formula.
 
+## Day 3 · How should an agent explain uncertainty without false precision?
+
+- Read the [LinkedIn-ready post](day-03-linkedin-post.md).
+- Use the [complete publishing package](day-03-publishing-package.md).
+- Run the [Forecast Explanation Lab](https://yswami.github.io/LinkedInPosts/2026/week-02-project-financial-alerts/day3.html).
+- Watch the [60-second narrated story](https://yswami.github.io/LinkedInPosts/2026/week-02-project-financial-alerts/day3-story.html).
+- Upload [`media/project-financial-alert-day3-60s.mp4`](media/project-financial-alert-day3-60s.mp4) with [`day-03-captions.srt`](day-03-captions.srt) to LinkedIn.
+
+The Day 3 experiment holds the `ESCALATE` classification constant while readers improve its explanation. It separates a working EAC from observed actuals, supported planning scenarios, confidence drivers, evidence freshness, and the next human decision. The scenario range is illustrative, not a statistical confidence interval.
+
 ## Planned story arc
 
 1. Validate the financial signal.

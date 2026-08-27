@@ -1,0 +1,9 @@
+At 8:25, Project Meridian has passed two controls. The ten-percent variance is validated, and policy says escalate. Then the agent writes: “The project will overrun by exactly eight million dollars.”
+
+That sounds decisive. But eighty-eight million is an estimate at completion—not a final invoice. Validation confirms the forecast’s sources. It does not eliminate uncertainty.
+
+The working EAC is eighty-eight million against an eighty-million budget. Supported scenarios run from eighty-five to ninety-two million. Confidence is medium because pending changes and remaining work can move the result.
+
+A decision-ready explanation separates observed actuals, commitments, estimates, and assumptions. It names the range, major drivers, evidence date, and next decision.
+
+Good AI does not hide uncertainty or manufacture confidence. It makes uncertainty usable: what we know, what may change, and what someone must decide next.

@@ -1,0 +1,43 @@
+1
+00:00:00,350 --> 00:00:04,660
+At 8:25, Project Meridian has passed two controls.
+
+2
+00:00:04,660 --> 00:00:09,120
+The 10% variance is validated, and policy says ESCALATE.
+
+3
+00:00:09,120 --> 00:00:14,040
+Then the agent writes: “The project will overrun by exactly $8M.”
+
+4
+00:00:14,040 --> 00:00:19,800
+That sounds decisive. But $88M is an estimate at completion—not a final invoice.
+
+5
+00:00:19,800 --> 00:00:24,520
+Validation confirms the forecast’s sources. It does not eliminate uncertainty.
+
+6
+00:00:24,520 --> 00:00:32,120
+The working EAC is $88M against an $80M budget. Supported scenarios run from $85M–$92M.
+
+7
+00:00:32,120 --> 00:00:37,400
+Confidence is medium because pending changes and remaining work can move the result.
+
+8
+00:00:37,400 --> 00:00:43,600
+A decision-ready explanation separates observed actuals, commitments, estimates and assumptions.
+
+9
+00:00:43,600 --> 00:00:48,240
+It names the range, major drivers, evidence date and next decision.
+
+10
+00:00:48,240 --> 00:00:52,360
+Good AI does not hide uncertainty or manufacture confidence.
+
+11
+00:00:52,360 --> 00:00:58,520
+It makes uncertainty usable: what we know, what may change and what someone must decide next.

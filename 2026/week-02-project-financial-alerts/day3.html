@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A fictional enterprise PPM experiment showing how to explain a validated project forecast without turning an estimate into a certain outcome.">
+  <meta property="og:title" content="A validated forecast is still not a fact">
+  <meta property="og:description" content="Keep Project Meridian's ESCALATE classification fixed and transform a false-precision claim into a decision-ready financial explanation.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yswami.github.io/LinkedInPosts/2026/week-02-project-financial-alerts/day3.html">
+  <link rel="canonical" href="https://yswami.github.io/LinkedInPosts/2026/week-02-project-financial-alerts/day3.html">
+  <link rel="stylesheet" href="lab.css?v=20260827">
+  <link rel="stylesheet" href="day3.css?v=20260827">
+  <title>Forecast Explanation Lab · Day 3</title>
+</head>
+<body>
+  <a class="skip-link" href="#experiment">Skip to the experiment</a>
+
+  <header class="site-header">
+    <a class="brand" href="../../index.html" aria-label="LinkedIn Posts home">
+      <span>PF</span>
+      <strong>Project Financial Alert Lab</strong>
+    </a>
+    <nav aria-label="Page navigation">
+      <a href="day2.html">Day 2: materiality</a>
+      <a href="day3-story.html">Watch the 60-second story</a>
+      <a href="#method">Explanation pattern</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Day 3 of 5 · A five-minute experiment</p>
+        <h1 id="page-title">A validated forecast is still not a fact.</h1>
+        <p class="hero-lead">Project Meridian’s signal is validated and policy says ESCALATE. Now improve the explanation without hiding uncertainty or manufacturing confidence.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#experiment">Build the explanation</a>
+          <a class="button secondary" href="day3-story.html">Watch the story</a>
+        </div>
+        <p class="privacy-note">Fictional scenarios · No sign-in · No API · Nothing stored</p>
+      </div>
+
+      <article class="signal-card uncertainty-signal-card" aria-label="Project Meridian agent draft">
+        <div class="signal-topline">
+          <span>PROJECT MERIDIAN</span>
+          <span class="status-chip escalated-chip">Day 2: ESCALATE</span>
+        </div>
+        <div class="metric-grid">
+          <div><span>Approved budget</span><strong>$80M</strong></div>
+          <div><span>Actual cost</span><strong>$46M</strong></div>
+          <div><span>ETC</span><strong>$42M</strong></div>
+          <div class="emphasis"><span>Working EAC</span><strong>$88M</strong></div>
+        </div>
+        <blockquote class="agent-draft">
+          <span>Agent draft</span>
+          <strong>“The project will overrun by exactly $8M.”</strong>
+        </blockquote>
+        <p>What is certain here—and what is still forecast?</p>
+      </article>
+    </section>
+
+    <section class="experiment" id="experiment" aria-labelledby="experiment-title">
+      <div class="section-heading">
+        <p class="eyebrow">The experiment</p>
+        <h2 id="experiment-title">Keep the decision fixed. Improve the explanation.</h2>
+        <p>The fictional policy classification remains ESCALATE. Change only how the financial forecast, its uncertainty, and the next decision are communicated.</p>
+      </div>
+
+      <div class="preset-row" aria-label="Explanation presets">
+        <button class="button alert-button" id="point-preset" type="button">Use point estimate only</button>
+        <button class="button tertiary" id="vague-preset" type="button">Add a vague hedge</button>
+        <button class="button secondary" id="ready-preset" type="button">Build a decision-ready alert</button>
+      </div>
+
+      <div class="experiment-grid">
+        <form class="evidence-panel" id="explanation-form">
+          <fieldset>
+            <legend><span>1</span> How should the $88M EAC be framed?</legend>
+            <div class="segmented-control framing-control">
+              <label><input type="radio" name="framing" value="exact" checked><span>Certain outcome</span></label>
+              <label><input type="radio" name="framing" value="vague"><span>Vague hedge</span></label>
+              <label><input type="radio" name="framing" value="forecast"><span>Current forecast</span></label>
+            </div>
+            <p>An estimate at completion should not be described as a settled final cost.</p>
+          </fieldset>
+
+          <fieldset>
+            <legend><span>2</span> Include the supported planning scenarios?</legend>
+            <label class="component-toggle" for="include-range">
+              <input id="include-range" type="checkbox">
+              <span aria-hidden="true"></span>
+              <strong>Show $85M–$92M</strong>
+              <small>Identify it as an illustrative scenario range—not a statistical confidence interval.</small>
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend><span>3</span> Include evidence freshness and confidence drivers?</legend>
+            <label class="component-toggle" for="include-drivers">
+              <input id="include-drivers" type="checkbox">
+              <span aria-hidden="true"></span>
+              <strong>Show medium confidence and why</strong>
+              <small>Name the actuals date, pending-change treatment, and remaining-work estimate.</small>
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend><span>4</span> Include the governed status and next decision?</legend>
+            <label class="component-toggle" for="include-decision">
+              <input id="include-decision" type="checkbox">
+              <span aria-hidden="true"></span>
+              <strong>Keep ESCALATE and request review</strong>
+              <small>State who must review and when—without letting the explanation change the policy.</small>
+            </label>
+          </fieldset>
+
+          <div class="form-actions">
+            <button class="button primary" type="submit">Evaluate the explanation</button>
+            <button class="text-button" type="reset">Reset</button>
+          </div>
+        </form>
+
+        <aside class="decision-panel explanation-decision" id="explanation-decision" aria-labelledby="decision-title" tabindex="-1">
+          <div class="decision-label">Explanation quality</div>
+          <div class="decision-status false-precision" id="decision-status">FALSE PRECISION</div>
+          <h3 id="decision-title">The wording claims more certainty than the evidence supports.</h3>
+
+          <dl class="decision-metrics">
+            <div><dt>Policy classification</dt><dd>ESCALATE</dd></div>
+            <div><dt>Explanation completeness</dt><dd id="completeness">0 / 4</dd></div>
+            <div><dt>Confidence disclosed</dt><dd id="confidence-value">No</dd></div>
+          </dl>
+
+          <div class="alert-preview" aria-live="polite" aria-atomic="true">
+            <strong>Generated financial alert</strong>
+            <p id="alert-text">Project Meridian will overrun by exactly $8.0M.</p>
+          </div>
+
+          <div class="copy-row">
+            <button class="button copy-button" id="copy-alert" type="button">Copy alert</button>
+            <output id="copy-status" aria-live="polite"></output>
+          </div>
+
+          <div class="decision-explanation missing-elements">
+            <strong>What is still missing</strong>
+            <ul id="missing-list"></ul>
+          </div>
+
+          <p class="day-boundary"><strong>Day 3 boundary:</strong> make uncertainty usable. Recommending recovery actions and testing their cross-project effects is the Day 4 problem.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="method" id="method" aria-labelledby="method-title">
+      <div class="section-heading">
+        <p class="eyebrow">Implementation pattern</p>
+        <h2 id="method-title">Separate financial state from forecast uncertainty.</h2>
+      </div>
+      <div class="method-grid">
+        <article><span>01</span><h3>Label</h3><p>Distinguish posted actuals, commitments, estimate to complete, and assumptions.</p></article>
+        <article><span>02</span><h3>Bound</h3><p>Use governed scenarios or sensitivity analysis. If no supported range exists, say so.</p></article>
+        <article><span>03</span><h3>Explain</h3><p>Name evidence freshness, confidence drivers, and the conditions that could move the forecast.</p></article>
+        <article><span>04</span><h3>Decide</h3><p>Keep the policy classification stable and state the next human decision, owner, and timing.</p></article>
+      </div>
+    </section>
+
+    <section class="guardrail" aria-label="Experiment guardrail">
+      <strong>A range can create false confidence too.</strong>
+      <p>The $85M–$92M span is an illustrative planning-scenario range. It is not a probability distribution or statistical confidence interval. Real ranges must come from governed scenario logic, sensitivity analysis, or documented assumptions—not an LLM guess.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Independent educational project · No customer data · Not representative of any employer or product roadmap</p>
+    <a href="https://github.com/yswami/LinkedInPosts/tree/main/2026/week-02-project-financial-alerts">View source on GitHub</a>
+  </footer>
+
+  <script src="day3.js?v=20260827"></script>
+</body>
+</html>
