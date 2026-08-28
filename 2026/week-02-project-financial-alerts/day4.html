@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A fictional enterprise PPM experiment showing why a project recovery recommendation must be evaluated across portfolio cost, schedule, cash timing, dependencies, and approvals.">
+  <meta property="og:title" content="A recovery plan can improve one project and damage the portfolio">
+  <meta property="og:description" content="Reveal the portfolio blast radius behind an attractive Project Meridian recovery recommendation and compare a lower-impact alternative.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yswami.github.io/LinkedInPosts/2026/week-02-project-financial-alerts/day4.html">
+  <link rel="canonical" href="https://yswami.github.io/LinkedInPosts/2026/week-02-project-financial-alerts/day4.html">
+  <link rel="stylesheet" href="lab.css?v=20260827">
+  <link rel="stylesheet" href="day4.css?v=20260827">
+  <title>Portfolio Blast Radius Lab · Day 4</title>
+</head>
+<body>
+  <a class="skip-link" href="#experiment">Skip to the experiment</a>
+
+  <header class="site-header">
+    <a class="brand" href="../../index.html" aria-label="LinkedIn Posts home">
+      <span>PF</span>
+      <strong>Project Financial Alert Lab</strong>
+    </a>
+    <nav aria-label="Page navigation">
+      <a href="day3.html">Day 3: uncertainty</a>
+      <a href="day4-story.html">Watch the 60-second story</a>
+      <a href="#method">Simulation pattern</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Day 4 of 5 · A five-minute experiment</p>
+        <h1 id="page-title">A local recovery can create a portfolio problem.</h1>
+        <p class="hero-lead">Project Meridian’s signal is validated, escalated, and explained. Now test the financial blast radius before accepting the agent’s recovery recommendation.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#experiment">Reveal the blast radius</a>
+          <a class="button secondary" href="day4-story.html">Watch the story</a>
+        </div>
+        <p class="privacy-note">Fictional scenarios · No sign-in · No API · Nothing stored</p>
+      </div>
+
+      <article class="signal-card recovery-signal-card" aria-label="Project Meridian recovery recommendation">
+        <div class="signal-topline">
+          <span>PROJECT MERIDIAN</span>
+          <span class="status-chip recommendation-chip">Agent proposal</span>
+        </div>
+        <blockquote class="recovery-proposal">
+          <span>Recommended action</span>
+          <strong>Move two shared architects from Project Beacon for six weeks.</strong>
+        </blockquote>
+        <div class="metric-grid">
+          <div><span>Current EAC</span><strong>$88M</strong></div>
+          <div class="emphasis"><span>Recovery EAC</span><strong>$84M</strong></div>
+          <div><span>Current delay</span><strong>21d</strong></div>
+          <div class="emphasis"><span>Recovery delay</span><strong>8d</strong></div>
+        </div>
+        <p>Looks attractive. What happens outside Meridian?</p>
+      </article>
+    </section>
+
+    <section class="experiment" id="experiment" aria-labelledby="experiment-title">
+      <div class="section-heading">
+        <p class="eyebrow">The experiment</p>
+        <h2 id="experiment-title">Expand the unit of analysis.</h2>
+        <p>Keep the fictional recovery action constant. Add the consequences that a project-only view leaves out.</p>
+      </div>
+
+      <div class="preset-row" aria-label="Blast-radius presets">
+        <button class="button alert-button" id="local-preset" type="button">Judge Meridian only</button>
+        <button class="button tertiary" id="dependency-preset" type="button">Add the direct dependency</button>
+        <button class="button secondary" id="portfolio-preset" type="button">Build the portfolio view</button>
+      </div>
+
+      <div class="experiment-grid">
+        <form class="evidence-panel" id="blast-form">
+          <fieldset>
+            <legend><span>1</span> Include the shared-resource effect?</legend>
+            <label class="component-toggle" for="include-beacon">
+              <input id="include-beacon" type="checkbox">
+              <span aria-hidden="true"></span>
+              <strong>Show Project Beacon’s impact</strong>
+              <small>EAC rises from $72M to $74.5M and go-live slips by 18 days.</small>
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend><span>2</span> Recalculate the portfolio financial effect?</legend>
+            <label class="component-toggle" for="include-net-eac">
+              <input id="include-net-eac" type="checkbox">
+              <span aria-hidden="true"></span>
+              <strong>Replace local savings with net EAC impact</strong>
+              <small>Meridian improves $4M, but Beacon adds $2.5M: net improvement is $1.5M.</small>
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend><span>3</span> Include milestone cash timing?</legend>
+            <label class="component-toggle" for="include-cash">
+              <input id="include-cash" type="checkbox">
+              <span aria-hidden="true"></span>
+              <strong>Show the $12M acceptance milestone</strong>
+              <small>The fictional receipt moves from the current quarter into the next.</small>
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend><span>4</span> Compare an alternative and preserve approval?</legend>
+            <label class="component-toggle" for="include-alternative">
+              <input id="include-alternative" type="checkbox">
+              <span aria-hidden="true"></span>
+              <strong>Compare phased scope and request portfolio review</strong>
+              <small>Meridian reaches $85.5M EAC and 12 days late; Beacon and cash timing stay unchanged.</small>
+            </label>
+          </fieldset>
+
+          <div class="form-actions">
+            <button class="button primary" type="submit">Evaluate the recommendation</button>
+            <button class="text-button" type="reset">Reset</button>
+          </div>
+        </form>
+
+        <aside class="decision-panel blast-decision" id="blast-decision" aria-labelledby="decision-title" tabindex="-1">
+          <div class="decision-label">Simulation readiness</div>
+          <div class="decision-status local-optimum" id="decision-status">LOCAL OPTIMUM</div>
+          <h3 id="decision-title">The recommendation improves Meridian by ignoring the rest of the portfolio.</h3>
+
+          <dl class="decision-metrics">
+            <div><dt>Meridian EAC impact</dt><dd>–$4.0M</dd></div>
+            <div><dt>Net portfolio EAC</dt><dd id="net-eac">–$4.0M*</dd></div>
+            <div><dt>Cash timing</dt><dd id="cash-impact">Not assessed</dd></div>
+          </dl>
+
+          <div class="alert-preview" aria-live="polite" aria-atomic="true">
+            <strong>Generated recovery assessment</strong>
+            <p id="assessment-text">Move two shared architects from Beacon to Meridian. Meridian EAC improves from $88.0M to $84.0M and forecast delay falls from 21 days to 8 days.</p>
+          </div>
+
+          <div class="copy-row">
+            <button class="button copy-button" id="copy-assessment" type="button">Copy assessment</button>
+            <output id="copy-status" aria-live="polite"></output>
+          </div>
+
+          <div class="decision-explanation missing-elements">
+            <strong>Portfolio checks</strong>
+            <ul id="missing-list"></ul>
+          </div>
+
+          <p class="day-boundary"><strong>Day 4 boundary:</strong> simulate and compare recovery options. Whether an agent may execute, draft, or only recommend them is the Day 5 control.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="comparison" aria-labelledby="comparison-title">
+      <div class="section-heading">
+        <p class="eyebrow">The trade-off</p>
+        <h2 id="comparison-title">Two options. Different portfolio consequences.</h2>
+      </div>
+      <div class="option-grid">
+        <article>
+          <span class="option-label">Option A · Transfer architects</span>
+          <h3>Stronger Meridian schedule recovery</h3>
+          <dl><div><dt>Meridian</dt><dd>$84M · 8 days late</dd></div><div><dt>Beacon</dt><dd>$74.5M · +18 days</dd></div><div><dt>Portfolio EAC</dt><dd>–$1.5M</dd></div><div><dt>Cash timing</dt><dd>$12M next quarter</dd></div></dl>
+        </article>
+        <article class="preferred-option">
+          <span class="option-label">Option B · Phase and resequence</span>
+          <h3>Lower portfolio disruption</h3>
+          <dl><div><dt>Meridian</dt><dd>$85.5M · 12 days late</dd></div><div><dt>Beacon</dt><dd>Unchanged</dd></div><div><dt>Portfolio EAC</dt><dd>–$2.5M</dd></div><div><dt>Cash timing</dt><dd>No shift</dd></div></dl>
+        </article>
+      </div>
+      <p class="comparison-note">Neither option is universally “correct.” The choice depends on governed priorities, contractual commitments, resource feasibility, and decision authority.</p>
+    </section>
+
+    <section class="method" id="method" aria-labelledby="method-title">
+      <div class="section-heading">
+        <p class="eyebrow">Implementation pattern</p>
+        <h2 id="method-title">Simulate before recommending.</h2>
+      </div>
+      <div class="method-grid">
+        <article><span>01</span><h3>Map</h3><p>Identify shared people, milestones, contracts, dependencies, and downstream projects.</p></article>
+        <article><span>02</span><h3>Simulate</h3><p>Calculate cost, schedule, cash-timing, and capacity effects using governed scenario logic.</p></article>
+        <article><span>03</span><h3>Compare</h3><p>Show options against the same portfolio metrics instead of optimizing one project in isolation.</p></article>
+        <article><span>04</span><h3>Govern</h3><p>Expose assumptions, constraints, decision rights, and approvals before any resource change.</p></article>
+      </div>
+    </section>
+
+    <section class="guardrail" aria-label="Experiment guardrail">
+      <strong>A simulation is not a prediction or an execution approval.</strong>
+      <p>All figures and relationships are fictional. Real portfolio effects must come from governed project, resource, contract, billing, and financial data—not an LLM-generated dependency graph.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Independent educational project · No customer data · Not representative of any employer or product roadmap</p>
+    <a href="https://github.com/yswami/LinkedInPosts/tree/main/2026/week-02-project-financial-alerts">View source on GitHub</a>
+  </footer>
+
+  <script src="day4.js?v=20260827"></script>
+</body>
+</html>

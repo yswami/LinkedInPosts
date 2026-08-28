@@ -1,0 +1,54 @@
+1
+00:00:00,350 --> 00:00:04,900
+At 8:40, Project Meridian’s overrun is validated,
+escalated, and explained.
+
+2
+00:00:04,900 --> 00:00:10,670
+The agent proposes moving two shared architects
+from Project Beacon to Meridian.
+
+3
+00:00:11,000 --> 00:00:15,500
+On Meridian alone,
+the proposal looks excellent.
+
+4
+00:00:15,500 --> 00:00:20,360
+EAC falls from $88M to $84M,
+and the forecast delay shrinks from 21 days to 8.
+
+5
+00:00:20,700 --> 00:00:25,900
+But Beacon now slips 18 days,
+and its EAC rises by $2.5M.
+
+6
+00:00:25,900 --> 00:00:30,780
+A $12M acceptance milestone
+also moves into the next quarter.
+
+7
+00:00:31,050 --> 00:00:36,600
+Across the portfolio,
+the improvement is only $1.5M.
+
+8
+00:00:36,600 --> 00:00:45,050
+The dashboard promised $4M. A phased-scope alternative
+improves EAC by $2.5M with no Beacon impact, but leaves Meridian four days later.
+
+9
+00:00:45,350 --> 00:00:50,200
+Now ask which trade-off fits portfolio priority—
+not which project looks better.
+
+10
+00:00:50,200 --> 00:00:55,700
+Simulate cost, schedule, cash timing, dependencies,
+and approvals before recommending recovery.
+
+11
+00:00:55,700 --> 00:00:59,510
+Optimize the portfolio,
+not the loudest project.

@@ -31,7 +31,17 @@ The Day 2 experiment keeps the validated +10% signal constant and varies four fi
 
 The Day 3 experiment holds the `ESCALATE` classification constant while readers improve its explanation. It separates a working EAC from observed actuals, supported planning scenarios, confidence drivers, evidence freshness, and the next human decision. The scenario range is illustrative, not a statistical confidence interval.
 
-## Planned story arc
+## Day 4 · What is the portfolio blast radius of a recovery action?
+
+- Read the [LinkedIn-ready post](day-04-linkedin-post.md).
+- Use the [complete publishing package](day-04-publishing-package.md).
+- Run the [Portfolio Blast Radius Lab](https://yswami.github.io/LinkedInPosts/2026/week-02-project-financial-alerts/day4.html).
+- Watch the [60-second narrated story](https://yswami.github.io/LinkedInPosts/2026/week-02-project-financial-alerts/day4-story.html).
+- Upload [`media/project-financial-alert-day4-60s.mp4`](media/project-financial-alert-day4-60s.mp4) with [`day-04-captions.srt`](day-04-captions.srt) to LinkedIn.
+
+The Day 4 experiment starts with a Project Meridian recovery that appears to save $4M locally. It then exposes the shared-resource impact on Project Beacon, recalculates the net portfolio EAC effect, reveals a $12M cash-timing shift, and compares a lower-impact alternative. All relationships and values are fictional and deterministic.
+
+## Story arc
 
 1. Validate the financial signal.
 2. Configure materiality and alert policy.
