@@ -1,0 +1,44 @@
+1
+00:00:00,300 --> 00:00:06,200
+A sick day moved Friday's finale to Saturday—
+fitting for a story about forecasts.
+
+2
+00:00:06,450 --> 00:00:11,400
+Project Meridian began with a claim:
+$8M over budget.
+
+3
+00:00:11,650 --> 00:00:20,500
+Validate the evidence. Apply materiality policy.
+Explain uncertainty without false precision.
+
+4
+00:00:20,500 --> 00:00:25,850
+Simulate recovery across Beacon,
+portfolio cost, and cash timing.
+
+5
+00:00:26,100 --> 00:00:29,500
+Then ask:
+what may the agent actually do?
+
+6
+00:00:29,750 --> 00:00:38,000
+It can reconcile records, classify and explain the signal,
+compare scenarios, and prepare approval.
+
+7
+00:00:38,250 --> 00:00:45,500
+But changing the forecast, moving shared architects,
+or shifting a contractual milestone is consequential.
+
+8
+00:00:45,750 --> 00:00:51,600
+That requires an authorized approver, transaction validation,
+an audit trail, and a recovery path.
+
+9
+00:00:51,600 --> 00:00:55,300
+Validate, policy, explain, simulate, approve, then execute.
+Model confidence does not create decision authority.

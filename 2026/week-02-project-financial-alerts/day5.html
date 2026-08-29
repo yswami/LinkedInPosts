@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Replay the complete fictional Project Meridian financial-alert case and configure an action-specific approval boundary for an enterprise PPM agent.">
+  <meta property="og:title" content="The model has a recommendation. Who gets to press Apply?">
+  <meta property="og:description" content="A five-gate Project Meridian experiment: validate, apply policy, explain, simulate, approve, then execute.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yswami.github.io/LinkedInPosts/2026/week-02-project-financial-alerts/day5.html">
+  <link rel="canonical" href="https://yswami.github.io/LinkedInPosts/2026/week-02-project-financial-alerts/day5.html">
+  <link rel="stylesheet" href="lab.css?v=20260829">
+  <link rel="stylesheet" href="day5.css?v=20260829">
+  <title>Governed Action Lab · Day 5</title>
+</head>
+<body>
+  <a class="skip-link" href="#case-replay">Skip to the complete case</a>
+
+  <header class="site-header">
+    <a class="brand" href="../../index.html" aria-label="LinkedIn Posts home">
+      <span>PF</span>
+      <strong>Project Financial Alert Lab</strong>
+    </a>
+    <nav aria-label="Page navigation">
+      <a href="day4.html">Day 4: blast radius</a>
+      <a href="day5-story.html">Watch the 60-second finale</a>
+      <a href="#boundary">Set the action boundary</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero finale-hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Day 5 of 5 · The Saturday finale</p>
+        <h1 id="page-title">The model found an answer. Governance decides what happens next.</h1>
+        <p class="hero-lead">Replay Project Meridian from an ambiguous +$8M signal to a controlled action—and decide exactly where the agent must stop.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#case-replay">Run the complete case</a>
+          <a class="button secondary" href="day5-story.html">Watch the finale</a>
+        </div>
+        <p class="privacy-note">Fictional data · No sign-in · No API · Nothing stored</p>
+      </div>
+
+      <article class="signal-card governance-card" aria-label="Project Meridian governed action summary">
+        <div class="signal-topline">
+          <span>PROJECT MERIDIAN</span>
+          <span class="status-chip finale-chip">Decision ready</span>
+        </div>
+        <p class="weekend-note">The forecast missed Friday. The control design still has to work on Saturday.</p>
+        <ol class="mini-gates">
+          <li class="passed"><span>1</span><strong>Signal</strong><small>Validated</small></li>
+          <li class="passed"><span>2</span><strong>Policy</strong><small>Escalate</small></li>
+          <li class="passed"><span>3</span><strong>Uncertainty</strong><small>Explained</small></li>
+          <li class="passed"><span>4</span><strong>Blast radius</strong><small>Simulated</small></li>
+          <li class="current"><span>5</span><strong>Action</strong><small>Who approves?</small></li>
+        </ol>
+      </article>
+    </section>
+
+    <section class="case-replay" id="case-replay" aria-labelledby="replay-title">
+      <div class="section-heading">
+        <p class="eyebrow">The end-to-end experiment</p>
+        <h2 id="replay-title">Move the case through five gates.</h2>
+        <p>Each gate adds a different control. The financial conclusion becomes actionable only when all five are present.</p>
+      </div>
+
+      <div class="gate-tabs" role="tablist" aria-label="Project Meridian control gates">
+        <button id="gate-tab-1" role="tab" aria-selected="true" aria-controls="gate-panel" data-gate="1"><span>1</span>Validate</button>
+        <button id="gate-tab-2" role="tab" aria-selected="false" aria-controls="gate-panel" data-gate="2"><span>2</span>Policy</button>
+        <button id="gate-tab-3" role="tab" aria-selected="false" aria-controls="gate-panel" data-gate="3"><span>3</span>Explain</button>
+        <button id="gate-tab-4" role="tab" aria-selected="false" aria-controls="gate-panel" data-gate="4"><span>4</span>Simulate</button>
+        <button id="gate-tab-5" role="tab" aria-selected="false" aria-controls="gate-panel" data-gate="5"><span>5</span>Govern</button>
+      </div>
+
+      <article class="gate-panel" id="gate-panel" role="tabpanel" aria-live="polite" tabindex="-1">
+        <div class="gate-number" id="gate-number">Gate 1</div>
+        <div class="gate-copy">
+          <p class="gate-kicker" id="gate-kicker">Is the +$8M signal real?</p>
+          <h3 id="gate-title">Validate the evidence before naming the overrun.</h3>
+          <p id="gate-body">Reconcile actual-cost freshness, 900 pending contractor hours, a $6M commitment, currency treatment, and forecast version.</p>
+          <div class="gate-result" id="gate-result"><span>Outcome</span><strong>VALIDATED SIGNAL · EAC $88M · +10%</strong></div>
+        </div>
+        <dl class="gate-evidence" id="gate-evidence">
+          <div><dt>Input</dt><dd>Budget $80M · Actuals $46M · ETC $42M</dd></div>
+          <div><dt>Control</dt><dd>Deterministic reconciliation</dd></div>
+          <div><dt>Agent role</dt><dd>Surface gaps; do not invent missing records</dd></div>
+        </dl>
+        <div class="gate-actions">
+          <button class="button secondary" id="previous-gate" type="button" disabled>Previous gate</button>
+          <button class="button primary" id="next-gate" type="button">Continue to policy</button>
+        </div>
+      </article>
+    </section>
+
+    <section class="boundary" id="boundary" aria-labelledby="boundary-title">
+      <div class="section-heading">
+        <p class="eyebrow">The final control</p>
+        <h2 id="boundary-title">Grant autonomy one action at a time.</h2>
+        <p>Start with the recommended boundary, then test what happens when consequential write actions are added.</p>
+      </div>
+
+      <div class="preset-row">
+        <button class="button secondary" id="advisory-preset" type="button">Advisory agent</button>
+        <button class="button alert-button" id="unsafe-preset" type="button">Unapproved executor</button>
+        <button class="button tertiary" id="governed-preset" type="button">Approved execution</button>
+      </div>
+
+      <div class="experiment-grid action-grid">
+        <form class="evidence-panel" id="authority-form">
+          <fieldset>
+            <legend><span>1</span> Advisory actions</legend>
+            <label class="component-toggle" for="prepare-packet">
+              <input id="prepare-packet" type="checkbox" checked>
+              <span aria-hidden="true"></span>
+              <strong>Prepare the evidence, recommendation and approval packet</strong>
+              <small>Read, calculate, explain and simulate—without changing business records.</small>
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend><span>2</span> Consequential write actions</legend>
+            <label class="component-toggle" for="update-forecast">
+              <input id="update-forecast" type="checkbox">
+              <span aria-hidden="true"></span>
+              <strong>Update the working forecast</strong>
+              <small>Changes the financial record used by downstream reporting and decisions.</small>
+            </label>
+            <label class="component-toggle" for="move-resources">
+              <input id="move-resources" type="checkbox">
+              <span aria-hidden="true"></span>
+              <strong>Reassign the two shared architects</strong>
+              <small>Affects Project Meridian, Project Beacon and accountable managers.</small>
+            </label>
+            <label class="component-toggle" for="change-milestone">
+              <input id="change-milestone" type="checkbox">
+              <span aria-hidden="true"></span>
+              <strong>Change milestone and cash-timing dates</strong>
+              <small>May affect contracts, billing, revenue or stakeholder commitments.</small>
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend><span>3</span> Execution controls</legend>
+            <label class="component-toggle" for="approval-recorded">
+              <input id="approval-recorded" type="checkbox">
+              <span aria-hidden="true"></span>
+              <strong>Authorized portfolio approval is recorded</strong>
+              <small>The approver has the decision right for every selected action.</small>
+            </label>
+            <label class="component-toggle" for="transaction-controls">
+              <input id="transaction-controls" type="checkbox">
+              <span aria-hidden="true"></span>
+              <strong>Validate again, log the change and provide recovery</strong>
+              <small>Recheck current data, preserve the audit trail, and support rollback or correction.</small>
+            </label>
+          </fieldset>
+
+          <div class="form-actions">
+            <button class="button primary" type="submit">Evaluate authority</button>
+            <button class="text-button" type="reset">Reset</button>
+          </div>
+        </form>
+
+        <aside class="decision-panel authority-decision" id="authority-decision" aria-labelledby="authority-result-title" tabindex="-1">
+          <div class="decision-label">Permitted operating mode</div>
+          <div class="decision-status approval-ready" id="authority-status">PREPARE FOR APPROVAL</div>
+          <h3 id="authority-result-title">The agent may complete the analysis, but it must not commit the decision.</h3>
+
+          <div class="action-ladder" aria-label="Project Meridian action ladder">
+            <span class="complete">Validate</span><b>→</b>
+            <span class="complete">Policy</span><b>→</b>
+            <span class="complete">Explain</span><b>→</b>
+            <span class="complete">Simulate</span><b>→</b>
+            <span class="current">Approve</span><b>→</b>
+            <span>Execute</span>
+          </div>
+
+          <div class="alert-preview" aria-live="polite" aria-atomic="true">
+            <strong>Generated authority statement</strong>
+            <p id="authority-text">The agent may reconcile evidence, apply the approved materiality policy, explain uncertainty, compare portfolio scenarios, recommend an option, and prepare an approval packet. It may not update forecasts, reassign resources, change milestones, or communicate a committed portfolio decision.</p>
+          </div>
+
+          <div class="copy-row">
+            <button class="button copy-button" id="copy-authority" type="button">Copy authority statement</button>
+            <output id="copy-status" aria-live="polite"></output>
+          </div>
+
+          <div class="decision-explanation missing-elements">
+            <strong>Required controls</strong>
+            <ul id="authority-reasons"></ul>
+          </div>
+
+          <p class="day-boundary"><strong>Series boundary:</strong> model confidence can support a recommendation. It cannot manufacture data quality, policy, permission, accountability, or approval.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="method finale-method" aria-labelledby="method-title">
+      <div class="section-heading">
+        <p class="eyebrow">The complete implementation pattern</p>
+        <h2 id="method-title">Six gates, one governed decision.</h2>
+      </div>
+      <div class="method-grid six-gates">
+        <article><span>01</span><h3>Validate</h3><p>Reconcile source records, timestamps, versions and pending transactions.</p></article>
+        <article><span>02</span><h3>Apply policy</h3><p>Use approved materiality, priority, timing and routing rules.</p></article>
+        <article><span>03</span><h3>Explain</h3><p>Separate facts, assumptions, scenarios and the next decision.</p></article>
+        <article><span>04</span><h3>Simulate</h3><p>Expose cost, schedule, cash, capacity and dependency effects.</p></article>
+        <article><span>05</span><h3>Approve</h3><p>Route each consequential action to the authorized decision owner.</p></article>
+        <article><span>06</span><h3>Execute</h3><p>Validate again, commit only the approved scope, log and recover.</p></article>
+      </div>
+    </section>
+
+    <section class="guardrail" aria-label="Final experiment guardrail">
+      <strong>Responsible autonomy is not one global switch.</strong>
+      <p>It is a contract for each action: evidence required, policy applied, authority verified, side effects checked, audit recorded, and recovery available.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Independent educational project · No customer data · Not representative of any employer or product roadmap</p>
+    <a href="https://github.com/yswami/LinkedInPosts/tree/main/2026/week-02-project-financial-alerts">View the complete series on GitHub</a>
+  </footer>
+
+  <script src="day5.js?v=20260829"></script>
+</body>
+</html>

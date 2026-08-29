@@ -41,6 +41,16 @@ The Day 3 experiment holds the `ESCALATE` classification constant while readers 
 
 The Day 4 experiment starts with a Project Meridian recovery that appears to save $4M locally. It then exposes the shared-resource impact on Project Beacon, recalculates the net portfolio EAC effect, reveals a $12M cash-timing shift, and compares a lower-impact alternative. All relationships and values are fictional and deterministic.
 
+## Day 5 · What may the agent actually do?
+
+- Read the [LinkedIn-ready finale](day-05-linkedin-post.md).
+- Use the [complete publishing package](day-05-publishing-package.md).
+- Run the [Governed Action Lab](https://yswami.github.io/LinkedInPosts/2026/week-02-project-financial-alerts/day5.html).
+- Watch the [60-second narrated finale](https://yswami.github.io/LinkedInPosts/2026/week-02-project-financial-alerts/day5-story.html).
+- Upload [`media/project-financial-alert-day5-60s.mp4`](media/project-financial-alert-day5-60s.mp4) with [`day-05-captions.srt`](day-05-captions.srt) to LinkedIn.
+
+The Day 5 experiment replays the complete Meridian case and then makes the reader configure the agent's authority per action. It distinguishes read-only analysis and approval preparation from consequential forecast, resource, milestone, and communication writes. Governed execution requires recorded authority, transaction-level revalidation, audit, and recovery controls.
+
 ## Story arc
 
 1. Validate the financial signal.
