@@ -17,10 +17,19 @@ The series treats this as a hypothesis to examine, not a proven causal law. Clea
 
 The fictional invoice scenario compares the same agent operating under an ambiguous instruction and a clarified work contract. It diagnoses organizational ambiguity; it does not claim that clarity alone guarantees agent success.
 
+## Day 2 · We added a RACI. The agent was still stuck.
+
+- Read the [LinkedIn-ready post](day-02-linkedin-post.md).
+- Run the [RACI-to-Decision-Contract Lab](https://yswami.github.io/LinkedInPosts/2026/week-03-agent-ready-organization/day2.html).
+- Watch the [interactive character play](https://yswami.github.io/LinkedInPosts/2026/week-03-agent-ready-organization/day2-story.html).
+- Use the [Day 2 publishing package](day-02-publishing-package.md).
+
+Day 2 preserves RACI as a coordination tool, then tests the narrower claim that participation labels do not automatically encode an executable decision. The lab adds trigger, evidence, recommendation, decision, execution, authority limit, escalation, and retained decision record.
+
 ## Planned arc
 
 1. Diagnose organizational ambiguity before blaming the agent.
-2. Separate roles, responsibilities, decision rights, and accountability.
+2. Separate roles, responsibilities, decision rights, and accountability. **Complete.**
 3. Redesign the division of labour between humans and agents.
 4. Measure organizational readiness separately from model capability.
 5. Build an adaptable organizational interface for human-agent work.

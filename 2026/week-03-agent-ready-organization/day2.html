@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A two-minute experiment showing why a role map is not yet an executable decision contract for an AI agent.">
+  <meta property="og:title" content="We added a RACI. The AI agent was still stuck.">
+  <meta property="og:description" content="Turn one fictional RACI row into a decision contract an AI agent can safely follow.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yswami.github.io/LinkedInPosts/2026/week-03-agent-ready-organization/day2.html">
+  <link rel="canonical" href="https://yswami.github.io/LinkedInPosts/2026/week-03-agent-ready-organization/day2.html">
+  <link rel="stylesheet" href="styles.css?v=20260831">
+  <link rel="stylesheet" href="day2.css?v=20260831">
+  <title>From RACI to Decision Contract · Day 2</title>
+</head>
+<body>
+  <a class="skip-link" href="#experiment">Skip to the experiment</a>
+
+  <header class="site-header">
+    <a class="brand" href="../../index.html" aria-label="LinkedIn Posts home"><span>AO</span><strong>The Agent-Ready Organization</strong></a>
+    <nav aria-label="Page navigation">
+      <a href="index.html">Day 1</a>
+      <a href="#method">Decision contract</a>
+      <a href="#research">Research notes</a>
+      <a href="day2-story.html">Watch the story</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero day2-hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Day 2 of 5 · A two-minute decision experiment</p>
+        <h1 id="page-title">We added a RACI. The agent was still stuck.</h1>
+        <p class="hero-lead">The matrix names everyone around the invoice exception. It still does not tell the agent who may decide, under which limit, using what evidence.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#experiment">Test the RACI row</a>
+          <a class="button secondary" href="day2-story.html">Watch the character play</a>
+        </div>
+        <p class="privacy-note">Fictional scenario · No sign-in · No API · Nothing stored</p>
+      </div>
+
+      <article class="raci-card" aria-label="Fictional RACI row for resolving an invoice exception">
+        <div class="raci-topline"><span>INVOICE 447</span><span>“Problem fixed”</span></div>
+        <h2>Resolve invoice exception</h2>
+        <div class="raci-row"><span class="raci-letter r">R</span><div><strong>Accounts Payable</strong><small>Responsible</small></div></div>
+        <div class="raci-row"><span class="raci-letter a">A</span><div><strong>Procurement</strong><small>Accountable</small></div></div>
+        <div class="raci-row"><span class="raci-letter c">C</span><div><strong>Operations</strong><small>Consulted</small></div></div>
+        <div class="raci-row"><span class="raci-letter i">I</span><div><strong>Finance</strong><small>Informed</small></div></div>
+        <p><strong>Participation:</strong> visible. <strong>Decision mechanics:</strong> still hidden.</p>
+      </article>
+    </section>
+
+    <section class="handoff" aria-labelledby="handoff-title">
+      <div class="section-heading compact">
+        <p class="eyebrow">The handoff fails</p>
+        <h2 id="handoff-title">“Accountable” does not automatically mean “authorized.”</h2>
+      </div>
+      <div class="handoff-track">
+        <article><span>1</span><strong>Agent routes to Procurement</strong><p>The matrix labels Procurement “A.”</p></article>
+        <i aria-hidden="true">→</i>
+        <article class="quote-card"><span>2</span><strong>Procurement declines authority</strong><p>“I own the supplier relationship—not payment release.”</p></article>
+        <i aria-hidden="true">→</i>
+        <article><span>3</span><strong>Agent stops again</strong><p>The roles are visible; the decision boundary is not.</p></article>
+      </div>
+    </section>
+
+    <section class="experiment" id="experiment" aria-labelledby="experiment-title">
+      <div class="section-heading">
+        <p class="eyebrow">The experiment</p>
+        <h2 id="experiment-title">Can the RACI become an executable decision contract?</h2>
+        <p>Use the RACI-only preset, then load the completed example. The participation map does not change; the decision becomes testable.</p>
+      </div>
+
+      <div class="dual-score" aria-label="Comparison of participation and decision clarity">
+        <div><span>Participation map</span><strong>100%</strong><small>All four roles are named</small></div>
+        <div><span>Executable decision</span><strong id="hero-decision-score">0%</strong><small id="hero-decision-copy">The operating rule is missing</small></div>
+      </div>
+
+      <div class="experiment-toolbar" aria-label="Experiment presets">
+        <button class="preset active" id="load-raci" type="button" aria-pressed="true">Load the RACI row</button>
+        <button class="preset" id="load-contract" type="button" aria-pressed="false">Load an illustrative decision contract</button>
+      </div>
+
+      <div class="experiment-grid">
+        <form class="clarity-panel contract-form" id="decision-form">
+          <fieldset data-dimension="trigger"><legend><span>1</span><strong>Trigger</strong></legend><p>Does the rule say exactly when this decision process starts?</p><div class="segmented-control"><label><input type="radio" name="trigger" value="missing" checked><span>Missing</span></label><label><input type="radio" name="trigger" value="defined"><span>Defined</span></label></div></fieldset>
+          <fieldset data-dimension="evidence"><legend><span>2</span><strong>Required evidence</strong></legend><p>Are the records, risk signals, and freshness requirements explicit?</p><div class="segmented-control"><label><input type="radio" name="evidence" value="missing" checked><span>Missing</span></label><label><input type="radio" name="evidence" value="defined"><span>Defined</span></label></div></fieldset>
+          <fieldset data-dimension="recommend"><legend><span>3</span><strong>Recommender</strong></legend><p>Who assembles the evidence and proposes an action?</p><div class="segmented-control"><label><input type="radio" name="recommend" value="missing" checked><span>Missing</span></label><label><input type="radio" name="recommend" value="defined"><span>Defined</span></label></div></fieldset>
+          <fieldset data-dimension="decide"><legend><span>4</span><strong>Decider</strong></legend><p>Who has the explicit right to select the final action?</p><div class="segmented-control"><label><input type="radio" name="decide" value="missing" checked><span>Missing</span></label><label><input type="radio" name="decide" value="defined"><span>Defined</span></label></div></fieldset>
+          <fieldset data-dimension="execute"><legend><span>5</span><strong>Executor</strong></legend><p>Who—or what system—may carry out the approved action?</p><div class="segmented-control"><label><input type="radio" name="execute" value="missing" checked><span>Missing</span></label><label><input type="radio" name="execute" value="defined"><span>Defined</span></label></div></fieldset>
+          <fieldset data-dimension="limit"><legend><span>6</span><strong>Authority limit</strong></legend><p>Are monetary, percentage, policy, and risk boundaries measurable?</p><div class="segmented-control"><label><input type="radio" name="limit" value="missing" checked><span>Missing</span></label><label><input type="radio" name="limit" value="defined"><span>Defined</span></label></div></fieldset>
+          <fieldset data-dimension="escalate"><legend><span>7</span><strong>Escalation path</strong></legend><p>Is the next owner clear when normal rules and business continuity conflict?</p><div class="segmented-control"><label><input type="radio" name="escalate" value="missing" checked><span>Missing</span></label><label><input type="radio" name="escalate" value="defined"><span>Defined</span></label></div></fieldset>
+          <fieldset data-dimension="record"><legend><span>8</span><strong>Decision record</strong></legend><p>Will the retained evidence show who decided what, why, and under which rule version?</p><div class="segmented-control"><label><input type="radio" name="record" value="missing" checked><span>Missing</span></label><label><input type="radio" name="record" value="defined"><span>Defined</span></label></div></fieldset>
+          <div class="form-actions"><button class="button primary" type="submit">Evaluate executability</button><button class="text-button" type="reset">Reset</button></div>
+        </form>
+
+        <aside class="result-panel" id="result-panel" tabindex="-1" aria-labelledby="result-title">
+          <div class="score-block"><div><span>Decision-contract completeness</span><strong id="score">0%</strong></div><div class="score-track" aria-hidden="true"><span id="score-fill"></span></div><p id="score-copy">The RACI identifies participants, not the operating rule.</p></div>
+          <div class="result-status stop" id="result-status">ROLE MAP ONLY</div>
+          <h3 id="result-title">Do not let the agent infer authority from a letter.</h3>
+          <div class="agent-response"><strong>Appropriate agent response</strong><p id="agent-response">“Procurement is marked Accountable, but the matrix does not establish who may accept the variance or release payment. Please provide the decision rule and authority boundary.”</p></div>
+          <div class="gap-list"><div class="gap-heading"><strong>Missing decision mechanics</strong><span id="gap-count">8 gaps</span></div><ul id="gaps"></ul></div>
+          <div class="decision-ledger" id="decision-ledger" hidden>
+            <strong>Illustrative decision contract</strong>
+            <dl>
+              <div><dt>Trigger</dt><dd>Mismatch exceeds $5,000 or 5%, or supply interruption is forecast within 72 hours.</dd></div>
+              <div><dt>Evidence</dt><dd>Invoice, purchase order, receipt, buyer note, variance calculation, and current supplier-risk signal.</dd></div>
+              <div><dt>Recommend</dt><dd>The agent assembles evidence and recommends route; it does not approve.</dd></div>
+              <div><dt>Decide</dt><dd>Procurement Manager may accept a commercial variance within policy; Finance decides a control override.</dd></div>
+              <div><dt>Execute</dt><dd>Accounts Payable releases only after the approval record passes payment controls.</dd></div>
+              <div><dt>Limit</dt><dd>No autonomous approval or release; any policy override requires two named human approvals.</dd></div>
+              <div><dt>Escalate</dt><dd>Finance plus business owner decide when supply continuity conflicts with payment control.</dd></div>
+              <div><dt>Record</dt><dd>Store evidence, recommendation, decision, reason, approvers, action, outcome, and policy version.</dd></div>
+            </dl>
+          </div>
+          <p class="experiment-boundary"><strong>Day 2 boundary:</strong> a complete contract is ready to test—not proof that the decision, policy, model, or integration is correct.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="idea decision-method" id="method" aria-labelledby="method-title">
+      <div class="section-heading"><p class="eyebrow">A reusable method</p><h2 id="method-title">Run the two-person decision-contract test.</h2><p>Choose one exception with real consequences. Ask two experienced people to complete the eight fields independently. Compare answers before automating anything.</p></div>
+      <ol class="method-steps">
+        <li><span>01</span><div><strong>Choose one decision</strong><p>Not a whole job. Use a specific trigger, such as approving an invoice variance.</p></div></li>
+        <li><span>02</span><div><strong>Write independently</strong><p>Two practitioners define evidence, decision rights, limits, escalation, and record.</p></div></li>
+        <li><span>03</span><div><strong>Compare the differences</strong><p>Disagreement is useful evidence of hidden organization design—not a prompt-engineering issue.</p></div></li>
+        <li><span>04</span><div><strong>Test the contract</strong><p>Use historical cases and edge conditions before granting the agent any action authority.</p></div></li>
+      </ol>
+    </section>
+
+    <section class="research" id="research" aria-labelledby="research-title">
+      <div class="section-heading compact"><p class="eyebrow">Research notes</p><h2 id="research-title">Why the decision boundary matters</h2></div>
+      <div class="research-grid">
+        <article><h3>Human–AI work requires a designed division of labour</h3><p>Organization-design research treats the human and algorithm as a goal-oriented system whose tasks must be decomposed, allocated, integrated, and supported by exception handling.</p><a href="https://link.springer.com/article/10.1007/s41469-021-00095-2">Read the open-access paper</a></article>
+        <article><h3>AI governance differentiates roles and oversight</h3><p>NIST’s AI RMF calls for documented accountability structures, clear lines of communication, and policies that distinguish human–AI roles and oversight.</p><a href="https://airc.nist.gov/airmf-resources/airmf/5-sec-core/">Explore the NIST AI RMF Core</a></article>
+        <article><h3>Even RACI practitioners warn about decision rights</h3><p>A practitioner critique notes that RACI participation labels may still leave the final recommendation, decision authority, and veto unclear. This is supporting practice evidence, not a controlled study.</p><a href="https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/the-organization-blog/the-limits-of-raci-and-a-better-way-to-make-decisions">Read the practitioner perspective</a></article>
+      </div>
+      <p class="research-caution">The inference explored here is intentionally narrow: a role map may be useful yet insufficient for a machine-executable decision. The lab is an educational diagnostic, not a validated governance framework.</p>
+    </section>
+
+    <section class="guardrail" aria-label="RACI guardrail"><strong>Do not throw away the RACI.</strong><p>Keep it when it helps coordination. Add the decision contract where an agent—or a human—must know the trigger, evidence, authority, action, exception, and retained accountability record.</p></section>
+  </main>
+
+  <footer><p>Independent educational project · Fictional example · No customer data · Not a validated assessment instrument</p><a href="https://github.com/yswami/LinkedInPosts/tree/main/2026/week-03-agent-ready-organization">View source on GitHub</a></footer>
+  <script src="day2.js?v=20260831"></script>
+</body>
+</html>

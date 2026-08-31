@@ -1,0 +1,17 @@
+Tuesday morning, leadership says the problem is fixed. They add one RACI row.
+
+Resolve invoice exception. Accounts Payable: responsible. Procurement: accountable. Operations: consulted. Finance: informed.
+
+The agent routes the case to Procurement.
+
+Procurement replies: “I own the supplier relationship. I am not authorized to release payment.”
+
+Accounts Payable can block payment, but cannot accept the variance. Finance owns the control, but was only informed. Operations still sees a forty-eight-hour supply risk.
+
+The cast is named. The decision is not.
+
+A RACI can clarify participation. But an agent also needs a decision contract: trigger, evidence, recommender, decider, executor, authority limit, escalation path, and decision record.
+
+Here is the practical test. Pick one real exception. Ask who recommends, who decides, who executes, under what limit, using what evidence, and what happens when the rule and the outcome conflict.
+
+If those answers live only in people’s heads, the agent will not remove the ambiguity. It may simply execute one unwritten interpretation faster.

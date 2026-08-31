@@ -1,0 +1,49 @@
+1
+00:00:00,000 --> 00:00:05,100
+Tuesday morning, leadership says the problem is fixed.
+They add one RACI row.
+
+2
+00:00:05,100 --> 00:00:12,000
+Resolve invoice exception.
+AP: Responsible. Procurement: Accountable.
+Operations: Consulted. Finance: Informed.
+
+3
+00:00:12,000 --> 00:00:18,100
+The agent routes the case to Procurement.
+
+4
+00:00:18,100 --> 00:00:25,600
+“I own the supplier relationship.
+I am not authorized to release payment.”
+
+5
+00:00:25,600 --> 00:00:34,000
+AP can block payment, but cannot accept the variance.
+Finance owns the control, but was only informed.
+Operations still sees a 48-hour supply risk.
+
+6
+00:00:34,000 --> 00:00:37,300
+The cast is named. The decision is not.
+
+7
+00:00:37,300 --> 00:00:46,300
+A RACI can clarify participation.
+An agent also needs an executable decision contract.
+
+8
+00:00:46,300 --> 00:00:55,500
+Trigger · Evidence · Recommender · Decider
+Executor · Authority limit · Escalation · Decision record
+
+9
+00:00:55,500 --> 00:01:04,000
+Pick one real exception. Ask who recommends, decides,
+executes, under what limit, and using what evidence.
+
+10
+00:01:04,000 --> 00:01:11,000
+If the answers live only in people’s heads,
+the agent may execute one unwritten interpretation faster.
