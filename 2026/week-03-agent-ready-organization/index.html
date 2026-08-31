@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A five-minute experiment showing how organizational ambiguity becomes AI-agent ambiguity.">
+  <meta property="og:title" content="Is the AI agent confused—or is the organization?">
+  <meta property="og:description" content="Run the same fictional invoice exception under an ambiguous instruction and a clarified work contract.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yswami.github.io/LinkedInPosts/2026/week-03-agent-ready-organization/">
+  <link rel="canonical" href="https://yswami.github.io/LinkedInPosts/2026/week-03-agent-ready-organization/">
+  <link rel="stylesheet" href="styles.css?v=20260831">
+  <title>Organizational Ambiguity Lab · Day 1</title>
+</head>
+<body>
+  <a class="skip-link" href="#experiment">Skip to the experiment</a>
+
+  <header class="site-header">
+    <a class="brand" href="../../index.html" aria-label="LinkedIn Posts home">
+      <span>AO</span>
+      <strong>The Agent-Ready Organization</strong>
+    </a>
+    <nav aria-label="Page navigation">
+      <a href="#idea">The hypothesis</a>
+      <a href="#research">Research notes</a>
+      <a href="day1-story.html">Watch the 60-second story</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Day 1 of 5 · A five-minute organizational experiment</p>
+        <h1 id="page-title">Is the agent confused—or is the organization?</h1>
+        <p class="hero-lead">An invoice exception reaches one agent. Three experienced humans recommend three different actions. The ambiguity was already there; the agent makes it visible.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#experiment">Test the operating model</a>
+          <a class="button secondary" href="day1-story.html">Watch the story</a>
+        </div>
+        <p class="privacy-note">Fictional scenario · No sign-in · No API · Nothing stored</p>
+      </div>
+
+      <article class="invoice-card" aria-label="Fictional invoice exception">
+        <div class="invoice-topline">
+          <span>INVOICE 447</span>
+          <span class="status-chip">Exception</span>
+        </div>
+        <div class="metric-row">
+          <div><span>Invoice</span><strong>$84,600</strong></div>
+          <div><span>Mismatch</span><strong>6.2%</strong></div>
+          <div><span>Supply risk</span><strong>48h</strong></div>
+        </div>
+        <blockquote>“Resolve material discrepancies with the appropriate approver.”</blockquote>
+        <p>Clear instruction—or hidden organization design?</p>
+      </article>
+    </section>
+
+    <section class="interpretations" aria-labelledby="interpretations-title">
+      <div class="section-heading compact">
+        <p class="eyebrow">One instruction · Three plausible answers</p>
+        <h2 id="interpretations-title">The people are not necessarily wrong.</h2>
+      </div>
+      <div class="role-grid">
+        <article>
+          <span class="role-mark ap">AP</span>
+          <p class="role-name">Accounts Payable</p>
+          <h3>Hold the invoice.</h3>
+          <p>Do not release payment until the purchase order, receipt, and invoice agree.</p>
+        </article>
+        <article>
+          <span class="role-mark procurement">PR</span>
+          <p class="role-name">Procurement</p>
+          <h3>Protect supply.</h3>
+          <p>The buyer may accept a small commercial variance if the business case is documented.</p>
+        </article>
+        <article>
+          <span class="role-mark operations">OP</span>
+          <p class="role-name">Operations</p>
+          <h3>Release it now.</h3>
+          <p>A shipment stop could cost more than the mismatch. Correct the records afterward.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="experiment" id="experiment" aria-labelledby="experiment-title">
+      <div class="section-heading">
+        <p class="eyebrow">The experiment</p>
+        <h2 id="experiment-title">Can the organization explain the work?</h2>
+        <p>For each dimension, choose whether the current instruction defines it clearly. Then compare it with a clarified work contract.</p>
+      </div>
+
+      <div class="experiment-toolbar" aria-label="Experiment presets">
+        <button class="preset active" id="load-ambiguous" type="button" aria-pressed="true">Use the ambiguous instruction</button>
+        <button class="preset" id="load-clarified" type="button" aria-pressed="false">Load a clarified example</button>
+      </div>
+
+      <div class="experiment-grid">
+        <form class="clarity-panel" id="clarity-form">
+          <fieldset data-dimension="outcome">
+            <legend><span>1</span><strong>Outcome priority</strong></legend>
+            <p>Is it clear whether accuracy, payment speed, or supply continuity takes priority?</p>
+            <div class="segmented-control">
+              <label><input type="radio" name="outcome" value="unclear" checked><span>Unclear</span></label>
+              <label><input type="radio" name="outcome" value="defined"><span>Defined</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset data-dimension="owner">
+            <legend><span>2</span><strong>Accountable owner</strong></legend>
+            <p>Can one role be identified as accountable for the final exception decision?</p>
+            <div class="segmented-control">
+              <label><input type="radio" name="owner" value="unclear" checked><span>Unclear</span></label>
+              <label><input type="radio" name="owner" value="defined"><span>Defined</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset data-dimension="threshold">
+            <legend><span>3</span><strong>Decision threshold</strong></legend>
+            <p>Does “material” have a measurable monetary, percentage, risk, or policy definition?</p>
+            <div class="segmented-control">
+              <label><input type="radio" name="threshold" value="unclear" checked><span>Unclear</span></label>
+              <label><input type="radio" name="threshold" value="defined"><span>Defined</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset data-dimension="authority">
+            <legend><span>4</span><strong>Agent authority</strong></legend>
+            <p>Is it clear whether the agent may collect evidence, recommend, route, approve, or release payment?</p>
+            <div class="segmented-control">
+              <label><input type="radio" name="authority" value="unclear" checked><span>Unclear</span></label>
+              <label><input type="radio" name="authority" value="defined"><span>Defined</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset data-dimension="exception">
+            <legend><span>5</span><strong>Exception path</strong></legend>
+            <p>When policy and business continuity conflict, is the override owner and evidence requirement defined?</p>
+            <div class="segmented-control">
+              <label><input type="radio" name="exception" value="unclear" checked><span>Unclear</span></label>
+              <label><input type="radio" name="exception" value="defined"><span>Defined</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset data-dimension="measure">
+            <legend><span>6</span><strong>Success measure</strong></legend>
+            <p>Can the organization verify that the routing and final outcome were correct?</p>
+            <div class="segmented-control">
+              <label><input type="radio" name="measure" value="unclear" checked><span>Unclear</span></label>
+              <label><input type="radio" name="measure" value="defined"><span>Defined</span></label>
+            </div>
+          </fieldset>
+
+          <div class="form-actions">
+            <button class="button primary" type="submit">Evaluate agent readiness</button>
+            <button class="text-button" type="reset">Reset</button>
+          </div>
+        </form>
+
+        <aside class="result-panel" id="result-panel" tabindex="-1" aria-labelledby="result-title">
+          <div class="score-block">
+            <div>
+              <span>Organizational legibility</span>
+              <strong id="score">0%</strong>
+            </div>
+            <div class="score-track" aria-hidden="true"><span id="score-fill"></span></div>
+            <p id="score-copy">The instruction names an activity, but not an executable operating model.</p>
+          </div>
+
+          <div class="result-status stop" id="result-status">STOP AND CLARIFY</div>
+          <h3 id="result-title">Do not ask the agent to choose between three hidden priorities.</h3>
+
+          <div class="agent-response">
+            <strong>Appropriate agent response</strong>
+            <p id="agent-response">“I found conflicting interpretations of the invoice exception. Please identify the accountable owner, materiality rule, permitted action, and exception path before I proceed.”</p>
+          </div>
+
+          <div class="gap-list">
+            <div class="gap-heading"><strong>Unresolved organization-design questions</strong><span id="gap-count">6 gaps</span></div>
+            <ul id="gaps"></ul>
+          </div>
+
+          <div class="contract" id="contract" hidden>
+            <strong>Illustrative clarified work contract</strong>
+            <dl>
+              <div><dt>Outcome</dt><dd>Resolve within 24 hours without unauthorized payment or avoidable supply disruption.</dd></div>
+              <div><dt>Owner</dt><dd>Procurement manager owns the commercial exception; Accounts Payable owns payment control.</dd></div>
+              <div><dt>Threshold</dt><dd>Route when the mismatch exceeds $5,000 or 5%; do not infer approval from percentage alone.</dd></div>
+              <div><dt>Agent</dt><dd>Collect evidence, calculate variance, identify supply risk, and route. Do not approve or release payment.</dd></div>
+              <div><dt>Exception</dt><dd>Supply-continuity override requires Finance and business-owner approval with a recorded reason.</dd></div>
+              <div><dt>Measure</dt><dd>Correct routing, decision time, override reason, and zero unauthorized releases.</dd></div>
+            </dl>
+          </div>
+
+          <p class="experiment-boundary"><strong>Day 1 boundary:</strong> this diagnoses organizational ambiguity. It does not test the model, data quality, security, integration, or change adoption.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="idea" id="idea" aria-labelledby="idea-title">
+      <div class="section-heading">
+        <p class="eyebrow">The working hypothesis</p>
+        <h2 id="idea-title">Agent readiness may begin with organizational legibility.</h2>
+        <p>Humans often bridge unclear ownership and rules through relationships, memory, judgement, and informal escalation. An agent needs those interfaces to become explicit.</p>
+      </div>
+      <div class="idea-grid">
+        <article><span>01</span><h3>Work</h3><p>What measurable outcome must be produced?</p></article>
+        <article><span>02</span><h3>Ownership</h3><p>Who remains accountable for the result?</p></article>
+        <article><span>03</span><h3>Authority</h3><p>What may the human or agent decide and change?</p></article>
+        <article><span>04</span><h3>Interfaces</h3><p>Which evidence, handoffs, and systems connect the work?</p></article>
+        <article><span>05</span><h3>Learning</h3><p>How do exceptions and outcomes change the operating model?</p></article>
+      </div>
+    </section>
+
+    <section class="research" id="research" aria-labelledby="research-title">
+      <div class="section-heading compact">
+        <p class="eyebrow">Research notes</p>
+        <h2 id="research-title">Why this is a hypothesis worth testing</h2>
+      </div>
+      <div class="research-grid">
+        <article>
+          <h3>Role ambiguity already affects human work</h3>
+          <p>A meta-analysis found a modest negative association between role ambiguity and job performance. This is human evidence, not direct proof about agents.</p>
+          <a href="https://journals.sagepub.com/doi/abs/10.1177/014920630002600104">Read the meta-analysis</a>
+        </article>
+        <article>
+          <h3>Human + AI is an organization-design problem</h3>
+          <p>Research frames human–AI decision-making as a multi-agent organizational system involving division of labour, communication, interdependence, and feedback.</p>
+          <a href="https://link.springer.com/article/10.1007/s41469-021-00095-2">Read the organization-design paper</a>
+        </article>
+        <article>
+          <h3>Governance requires explicit interfaces</h3>
+          <p>NIST calls for clear human–AI roles, task scope, oversight, metrics, testing, monitoring, and accountability throughout the system lifecycle.</p>
+          <a href="https://airc.nist.gov/airmf-resources/airmf/5-sec-core/">Explore the NIST AI RMF</a>
+        </article>
+      </div>
+      <p class="research-caution">The inference being explored: organizational clarity may improve the probability of successful agent implementation. The cited evidence supports its components, but does not establish this complete causal claim.</p>
+    </section>
+
+    <section class="guardrail" aria-label="Experiment guardrail">
+      <strong>Clarity is not the same as rigidity.</strong>
+      <p>Roles and policies can change rapidly. The current outcome, ownership, authority, exception path, and effective version still need to be understandable at the moment of action.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Independent educational project · Fictional example · No customer data · Not a validated assessment instrument</p>
+    <a href="https://github.com/yswami/LinkedInPosts/tree/main/2026/week-03-agent-ready-organization">View source on GitHub</a>
+  </footer>
+
+  <script src="app.js?v=20260831"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+1
+00:00:00,000 --> 00:00:09,800
+At 9:12, Invoice 447 lands in an agent's queue.
+Value: $84,600. Mismatch: 6.2%.
+
+2
+00:00:09,800 --> 00:00:15,460
+The instruction is simple:
+“Resolve material discrepancies with the appropriate approver.”
+
+3
+00:00:15,460 --> 00:00:20,920
+Accounts Payable says, “Hold it.”
+Procurement says, “Protect supply.” Operations says, “Pay now.”
+
+4
+00:00:20,920 --> 00:00:26,560
+Correct it later. Three reasonable answers.
+One agent waiting for a rule.
+
+5
+00:00:26,560 --> 00:00:32,200
+It cannot decide whose priority wins, what “material” means,
+or who approves an exception.
+
+6
+00:00:32,200 --> 00:00:40,680
+Humans bridge ambiguity through experience and informal conversations.
+The agent makes the invisible operating model visible.
+
+7
+00:00:40,680 --> 00:00:51,640
+Before asking whether the agent can reason, ask whether the organization
+can explain the work: outcome, owner, decision right, exception path, and success measure.
+
+8
+00:00:51,640 --> 00:00:58,680
+The first agent-readiness test is surprisingly human:
+can two experienced people explain the same decision in the same way?
