@@ -24,9 +24,10 @@ async function main() {
   const frameRate = positiveNumber(process.env.SERIES_FPS, 15);
   const width = positiveNumber(process.env.SERIES_WIDTH, 1080);
   const height = positiveNumber(process.env.SERIES_HEIGHT, 1350);
-  const duration = 60;
+  const duration = 61;
   const totalFrames = Math.round(frameRate * duration);
   const coverOnly = process.env.COVER_ONLY === "1";
+  const coverTime = positiveNumber(process.env.SERIES_COVER_TIME, 26.4);
   const framesDirectory = fs.mkdtempSync(path.join(os.tmpdir(), "agent-ready-day1-"));
   const executablePath = process.env.CHROME_PATH || "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
 
@@ -57,7 +58,7 @@ async function main() {
       }
     }
 
-    await page.evaluate(() => window.storyAnimation.renderAt(25.5));
+    await page.evaluate(value => window.storyAnimation.renderAt(value), coverTime);
     await page.locator("#animation-stage").screenshot({ path: coverPath, type: "jpeg", quality: 94, animations: "disabled" });
     await context.close();
     if (errors.length) throw new Error(`Browser errors:\n${errors.join("\n")}`);

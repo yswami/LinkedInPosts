@@ -1,39 +1,63 @@
 1
-00:00:00,000 --> 00:00:09,800
-At 9:12, Invoice 447 lands in an agent's queue.
-Value: $84,600. Mismatch: 6.2%.
+00:00:00,000 --> 00:00:05,820
+At 9:12 Monday, an $84,600 invoice
+enters the agent's queue.
 
 2
-00:00:09,800 --> 00:00:15,460
-The instruction is simple:
-“Resolve material discrepancies with the appropriate approver.”
+00:00:05,820 --> 00:00:11,940
+Mismatch: 6.2%. Supplier warning:
+shipments may stop in 48 hours.
 
 3
-00:00:15,460 --> 00:00:20,920
-Accounts Payable says, “Hold it.”
-Procurement says, “Protect supply.” Operations says, “Pay now.”
+00:00:11,940 --> 00:00:17,740
+The rulebook has one sentence: resolve material
+discrepancies with the appropriate approver.
 
 4
-00:00:20,920 --> 00:00:26,560
-Correct it later. Three reasonable answers.
-One agent waiting for a rule.
+00:00:17,740 --> 00:00:22,360
+Then the cast arrives. Accounts Payable:
+"Hold it. Records do not match."
 
 5
-00:00:26,560 --> 00:00:32,200
-It cannot decide whose priority wins, what “material” means,
-or who approves an exception.
+00:00:22,360 --> 00:00:27,860
+Procurement: "Release it. Protect supply."
+Operations: "Pay it. Correct it later."
 
 6
-00:00:32,200 --> 00:00:40,680
-Humans bridge ambiguity through experience and informal conversations.
-The agent makes the invisible operating model visible.
+00:00:27,860 --> 00:00:31,420
+Three reasonable answers.
+Together, no decision.
 
 7
-00:00:40,680 --> 00:00:51,640
-Before asking whether the agent can reason, ask whether the organization
-can explain the work: outcome, owner, decision right, exception path, and success measure.
+00:00:31,420 --> 00:00:35,000
+The reveal: the agent is not confused.
+The organization has never made five things explicit:
 
 8
-00:00:51,640 --> 00:00:58,680
-The first agent-readiness test is surprisingly human:
-can two experienced people explain the same decision in the same way?
+00:00:35,000 --> 00:00:40,440
+Outcome. Owner. Decision right.
+Exception path. Success measure.
+
+9
+00:00:40,440 --> 00:00:44,600
+Humans bridge gaps through memory
+and hallway conversations.
+
+10
+00:00:44,600 --> 00:00:48,600
+Agents cannot safely inherit rules
+that were never written down.
+
+11
+00:00:48,600 --> 00:00:53,080
+Before adding an agent, give the same exception
+to two experienced people.
+
+12
+00:00:53,080 --> 00:00:57,840
+If they cannot explain the decision the same way,
+you do not have an agent problem.
+
+13
+00:00:57,840 --> 00:00:59,920
+You have an organization-design problem.

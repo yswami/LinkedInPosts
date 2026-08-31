@@ -14,6 +14,7 @@ https://yswami.github.io/LinkedInPosts/2026/week-03-agent-ready-organization/
 - Upload file: `media/agent-ready-organization-day1-60s.mp4`
 - Captions: `day-01-captions.srt`
 - Cover: `media/agent-ready-organization-day1-cover.jpg`
+- Format: 61-second character play with an interactive decision on the web version and an automatic reveal in the upload version.
 
 ## First comment / research note
 
@@ -23,7 +24,7 @@ Research and source links are included in the interactive experiment.
 
 ## Accessibility
 
-The video contains narration and burned-in visual text. Upload the SRT file for a complete caption track. The story webpage also includes an accessible transcript and keyboard controls.
+The video contains narration and on-screen dialogue. Upload the SRT file for a complete caption track. The story webpage also includes an accessible transcript, keyboard controls, and a decision point that pauses until the viewer chooses.
 
 ## Disclaimer
 

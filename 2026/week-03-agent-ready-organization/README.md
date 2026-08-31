@@ -12,7 +12,7 @@ The series treats this as a hypothesis to examine, not a proven causal law. Clea
 
 - Read the [LinkedIn-ready post](day-01-linkedin-post.md).
 - Run the [Organizational Ambiguity Lab](https://yswami.github.io/LinkedInPosts/2026/week-03-agent-ready-organization/).
-- Watch the [60-second narrated story](https://yswami.github.io/LinkedInPosts/2026/week-03-agent-ready-organization/day1-story.html).
+- Watch the [one-minute interactive character play](https://yswami.github.io/LinkedInPosts/2026/week-03-agent-ready-organization/day1-story.html).
 - Use the [Day 1 publishing package](day-01-publishing-package.md).
 
 The fictional invoice scenario compares the same agent operating under an ambiguous instruction and a clarified work contract. It diagnoses organizational ambiguity; it does not claim that clarity alone guarantees agent success.

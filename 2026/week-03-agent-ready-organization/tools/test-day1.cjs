@@ -44,10 +44,22 @@ async function main() {
     const storyPage = await storyContext.newPage();
     await inspectPage(storyPage, pathToFileURL(path.join(root, "day1-story.html")).href + "?capture=1", "story");
     await storyPage.waitForFunction(() => document.documentElement.dataset.animationReady === "true");
-    await storyPage.evaluate(() => window.storyAnimation.renderAt(31.5));
+    await storyPage.evaluate(() => window.storyAnimation.renderAt(26.4));
     const visibleScenes = await storyPage.locator(".scene").evaluateAll(items => items.filter(item => Number(getComputedStyle(item).opacity) > 0.01).length);
     assert(visibleScenes >= 1 && visibleScenes <= 2, `Unexpected visible scene count: ${visibleScenes}`);
+    assert(await storyPage.locator(".role-actor").count() === 3, "The play should include three human role characters");
+    await storyPage.evaluate(() => window.storyAnimation.renderAt(34));
+    assert(await storyPage.locator('[data-decision="clarify"]').evaluate(item => item.classList.contains("is-selected")), "Capture mode should auto-select the missing-rule choice");
     await storyContext.close();
+
+    const interactiveContext = await browser.newContext({ viewport: { width: 390, height: 844 } });
+    const interactivePage = await interactiveContext.newPage();
+    await inspectPage(interactivePage, pathToFileURL(path.join(root, "day1-story.html")).href, "interactive story");
+    await interactivePage.waitForFunction(() => document.documentElement.dataset.animationReady === "true");
+    await interactivePage.evaluate(() => window.storyAnimation.renderAt(window.storyAnimation.decisionTime));
+    await interactivePage.locator('[data-decision="clarify"]').click();
+    assert((await interactivePage.locator("#decision-feedback").textContent()).includes("Exactly"), "The interactive choice should explain the safe move");
+    await interactiveContext.close();
   } finally {
     await browser.close();
   }

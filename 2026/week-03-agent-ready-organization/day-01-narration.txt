@@ -1,13 +1,15 @@
-At nine twelve, invoice four forty-seven lands in an agent's queue. Value: eighty-four thousand six hundred dollars. Mismatch: six point two percent. The instruction is simple: resolve material discrepancies with the appropriate approver.
+At nine twelve Monday, an eighty-four-thousand-six-hundred-dollar invoice enters the agent's queue. Mismatch: six point two percent. Supplier warning: shipments may stop in forty-eight hours.
 
-Accounts Payable says, hold it. Procurement says, protect supply. Operations says, pay now, correct it later.
+The rulebook has one sentence: resolve material discrepancies with the appropriate approver.
 
-Three reasonable answers. One agent waiting for a rule.
+Then the cast arrives.
 
-It cannot decide whose priority wins, what material means, or who approves an exception.
+Accounts Payable: hold it. Records do not match. Procurement: release it. Protect supply. Operations: pay it. Correct it later.
 
-Humans bridge ambiguity through experience and informal conversations. The agent makes the invisible operating model visible.
+Three reasonable answers. Together, no decision.
 
-Before asking whether the agent can reason, ask whether the organization can explain the work: outcome, owner, decision right, exception path, and success measure.
+The reveal: the agent is not confused. The organization has never made five things explicit: outcome, owner, decision right, exception path, and success measure.
 
-The first agent-readiness test is surprisingly human: can two experienced people explain the same decision in the same way?
+Humans bridge gaps through memory and hallway conversations. Agents cannot safely inherit rules that were never written down.
+
+Before adding an agent, give the same exception to two experienced people. If they cannot explain the decision the same way, you do not have an agent problem. You have an organization-design problem.
