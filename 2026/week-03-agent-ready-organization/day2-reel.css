@@ -1,0 +1,48 @@
+.reel-stage { background: #f7f0e4; }
+.reel-stage .scene { transform-origin: 50% 52%; }
+.alert-layout { position: relative; height: 50cqw; margin-top: 1cqw; }
+.alert-agent { bottom: 0; left: 0; width: 28cqw; height: 42cqw; }
+.invoice-alert { position: absolute; top: 3cqw; right: 1cqw; width: 60cqw; padding: 3.3cqw; background: rgba(255,253,248,.98); border: .25cqw solid var(--line); border-left: 1.1cqw solid var(--coral); border-radius: 0 2.2cqw 2.2cqw 0; box-shadow: 0 2cqw 5cqw rgba(46,35,24,.15); }
+.system-label,.leadership-reply span,.procurement-line span,.consequence span { display: block; color: var(--muted); font-size: 1.2cqw; font-style: normal; font-weight: 900; letter-spacing: .11em; text-transform: uppercase; }
+.invoice-alert > strong { display: block; margin: 1cqw 0 2.2cqw; color: var(--coral); font-family: Georgia,"Times New Roman",serif; font-size: 6.8cqw; font-weight: 500; letter-spacing: -.045em; line-height: .95; }
+.invoice-alert > div { display: flex; align-items: baseline; justify-content: space-between; padding-top: 1.4cqw; border-top: .18cqw solid var(--line); font-size: 1.5cqw; font-weight: 800; }
+.invoice-alert b { font-family: Georgia,"Times New Roman",serif; font-size: 3.4cqw; font-weight: 500; }
+.leadership-reply { position: absolute; right: 7cqw; bottom: 12cqw; z-index: 15; width: 55cqw; padding: 2.6cqw 3cqw; background: var(--forest-soft); border: .2cqw solid rgba(23,99,79,.24); border-radius: 2cqw; box-shadow: 0 1.4cqw 3cqw rgba(27,57,47,.12); }
+.leadership-reply strong { display: block; margin: .7cqw 0; color: var(--forest-dark); font-family: Georgia,"Times New Roman",serif; font-size: 4.4cqw; font-weight: 500; line-height: 1; }
+.leadership-reply i { color: var(--coral); font-size: 1.2cqw; font-style: normal; font-weight: 900; text-transform: uppercase; }
+.role-lineup { display: grid; grid-template-columns: repeat(4,1fr); gap: 1.1cqw; margin-top: 3.5cqw; }
+.role-card { position: relative; min-width: 0; padding: 1.2cqw .7cqw 1.4cqw; background: rgba(255,253,248,.96); border: .2cqw solid var(--line); border-radius: 1.5cqw; box-shadow: 0 1.1cqw 2.2cqw rgba(43,38,31,.09); text-align: center; }
+.role-card img { display: block; width: 100%; height: 22cqw; object-fit: contain; }
+.role-card b { position: absolute; top: .7cqw; right: .7cqw; display: grid; width: 4.4cqw; height: 4.4cqw; place-items: center; color: #fff; background: var(--forest); border-radius: 1cqw; font-size: 1.8cqw; }
+.role-ap b { background: var(--blue); }.role-operations b { background: var(--coral); }.role-finance b { background: var(--gold); }
+.role-card strong,.role-card span { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.role-card strong { margin-top: .7cqw; font-size: 1.15cqw; }.role-card span { color: var(--muted); font-size: 1.05cqw; font-weight: 720; }
+.raci-foot { margin: 2.4cqw 0 0; color: var(--forest-dark); font-size: 1.55cqw; font-weight: 850; text-align: center; }
+.route-track { position: relative; height: 55cqw; margin-top: 1cqw; }
+.routing-agent { bottom: 1cqw; left: 0; width: 25cqw; height: 38cqw; }
+.moving-case { position: absolute; top: 22cqw; left: 25cqw; z-index: 10; width: 25cqw; padding: 1.8cqw; background: #fffdf8; border: .2cqw solid var(--line); border-radius: 1.3cqw; box-shadow: 0 1cqw 2cqw rgba(40,35,29,.12); }
+.moving-case span,.moving-case strong { display: block; }.moving-case span { color: var(--muted); font-size: 1.1cqw; font-weight: 900; }.moving-case strong { font-family: Georgia,"Times New Roman",serif; font-size: 3.4cqw; font-weight: 500; }
+.route-dots { position: absolute; top: 32cqw; left: 49cqw; display: flex; gap: 1cqw; }.route-dots i { width: 1.2cqw; height: 1.2cqw; background: var(--gold); border-radius: 50%; }
+.route-procurement { right: -1cqw; bottom: 0; width: 28cqw; height: 43cqw; }
+.procurement-line { position: absolute; right: 5.5cqw; bottom: 8cqw; z-index: 20; width: 61cqw; margin: 0; padding: 2.2cqw 2.6cqw; background: rgba(255,253,248,.98); border: .2cqw solid var(--line); border-top: .8cqw solid var(--forest); border-radius: 1.7cqw; box-shadow: 0 1.4cqw 3cqw rgba(40,35,29,.13); }
+.procurement-line strong,.procurement-line em { display: block; font-family: Georgia,"Times New Roman",serif; font-size: 2.7cqw; font-weight: 500; line-height: 1.05; }.procurement-line em { margin-top: .7cqw; color: var(--coral); font-style: normal; }
+.consequence-grid { display: grid; gap: 1.5cqw; margin-top: 3cqw; }
+.consequence { display: grid; grid-template-columns: 15cqw 1fr; gap: 1.7cqw; align-items: center; min-height: 18cqw; padding: 1.3cqw 2cqw; background: rgba(255,253,248,.96); border: .2cqw solid var(--line); border-radius: 1.6cqw; box-shadow: 0 .9cqw 2cqw rgba(40,35,29,.08); }
+.consequence img { width: 15cqw; height: 15cqw; object-fit: contain; }
+.consequence strong,.consequence small { display: block; }.consequence strong { margin: .35cqw 0; font-family: Georgia,"Times New Roman",serif; font-size: 2.6cqw; font-weight: 500; }.consequence small { color: var(--muted); font-size: 1.25cqw; font-weight: 720; }
+.finance-consequence { border-left: .8cqw solid var(--gold); }
+.reel-realization { align-items: center; justify-content: center; color: #fff; background: rgba(13,67,55,.97); text-align: center; }
+.realization-spot { width: 28cqw; height: 30cqw; margin-top: -6cqw; }.realization-spot img { width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 1.2cqw 1.7cqw rgba(0,0,0,.28)); }
+.realization-first { margin: .5cqw 0 1.8cqw; color: rgba(255,255,255,.72); font-size: 2.4cqw; font-weight: 820; }
+.realization-line { max-width: 82cqw; margin: 0; font-family: Georgia,"Times New Roman",serif; font-size: 6.7cqw; font-weight: 500; letter-spacing: -.045em; line-height: .98; }.realization-line em { color: #f4c77f; font-style: normal; }
+.contract-board { position: relative; height: 56cqw; margin-top: 1.2cqw; }.contract-centre { top: 13cqw; left: 35cqw; width: 24cqw; height: 36cqw; }.contract-board ol { position: absolute; inset: 0; margin: 0; padding: 0; list-style: none; }
+.contract-board li { position: absolute; display: flex; gap: .9cqw; align-items: center; width: 28cqw; padding: 1.2cqw 1.5cqw; background: rgba(255,253,248,.97); border: .18cqw solid var(--line); border-radius: 1.2cqw; box-shadow: 0 .8cqw 1.8cqw rgba(37,39,34,.09); }.contract-board li span { color: var(--coral); font-size: 1.1cqw; font-weight: 900; }.contract-board li strong { font-size: 1.5cqw; }
+.contract-board li:nth-child(1){top:1cqw;left:0}.contract-board li:nth-child(2){top:1cqw;right:0}.contract-board li:nth-child(3){top:12cqw;left:-1cqw}.contract-board li:nth-child(4){top:12cqw;right:-1cqw}.contract-board li:nth-child(5){top:34cqw;left:-1cqw}.contract-board li:nth-child(6){top:34cqw;right:-1cqw}.contract-board li:nth-child(7){top:45cqw;left:0}.contract-board li:nth-child(8){top:45cqw;right:0}
+.contract-caption { margin: 0; color: var(--forest-dark); font-size: 1.55cqw; font-weight: 850; text-align: center; }
+.reel-finale .finale-title { max-width: 88cqw; font-size: 5cqw; }
+.compare-table { display: grid; grid-template-columns: 1fr auto 1fr; gap: 1.2cqw; align-items: center; margin-top: 2.5cqw; padding: 1.7cqw; background: rgba(255,253,248,.96); border: .2cqw solid var(--line); border-radius: 1.7cqw; box-shadow: 0 1cqw 2.5cqw rgba(42,37,31,.1); text-align: center; }
+.compare-table > div:not(.compare-word) { display: flex; flex-direction: column; align-items: center; }.compare-table img { width: 17cqw; height: 17cqw; object-fit: contain; }.compare-table strong { font-family: Georgia,"Times New Roman",serif; font-size: 2.1cqw; font-weight: 500; }.compare-table span { color: var(--muted); font-size: 1.05cqw; font-weight: 730; }
+.compare-word { padding: .7cqw 1cqw; color: var(--coral); background: var(--coral-soft); border-radius: 999px; font-size: 1.05cqw; font-weight: 900; letter-spacing: .09em; }
+.final-insight { margin-top: 1.7cqw; padding: 1.7cqw 2cqw; color: #fff; background: var(--forest-dark); border-radius: 1.5cqw; text-align: center; }.final-insight span { display: block; color: rgba(255,255,255,.68); font-size: 1.15cqw; font-weight: 900; text-transform: uppercase; }.final-insight strong { display: block; margin-top: .35cqw; font-family: Georgia,"Times New Roman",serif; font-size: 2.8cqw; font-weight: 500; }
+.reel-finale .final-cta { margin-top: 1.3cqw; }
+@media (max-width:700px) { .role-card strong { font-size: 1.2cqw; } }

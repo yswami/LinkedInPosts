@@ -1,8 +1,8 @@
-Day 2/5 — We added a RACI. The AI agent was still stuck.
+Day 2/5 — We added a RACI. The AI agent still could not act.
 
-After yesterday’s invoice exception, the organization decided to clarify ownership.
+Yesterday, an invoice exception exposed an uncomfortable problem: nobody could explain the complete decision.
 
-It added one row:
+So leadership added a RACI.
 
 Resolve invoice exception
 • Accounts Payable — Responsible
@@ -10,48 +10,50 @@ Resolve invoice exception
 • Operations — Consulted
 • Finance — Informed
 
-That looks much better.
+Problem solved?
 
-So the agent routes the case to Procurement.
+The agent reads the “A” and routes the case to Procurement.
 
 Procurement replies:
 
-“I am accountable for the supplier relationship. I am not authorized to release payment.”
+“I own the supplier relationship. I cannot release payment.”
 
-Accounts Payable can block payment, but cannot accept the commercial variance.
+Accounts Payable can block the invoice, but cannot accept the commercial variance.
 
-Finance owns the payment control, but was only marked “Informed.”
+Finance owns the payment control, but was only informed.
 
-Operations still sees a 48-hour supply risk.
+Operations is watching a 48-hour supply risk.
 
-The cast is named. The decision is not.
+Everyone has a letter.
 
-This is not an argument against RACI. A RACI can be useful for showing participation and coordination.
+The agent still does not have a decision.
 
-But an AI agent needs something more executable:
+That does not make RACI useless. It clarifies participation.
 
-• What event triggers the decision?
-• What evidence must be present?
+But participation is not the same as execution.
+
+Before an agent can act, it needs a decision contract:
+
+• What triggers the decision?
+• What evidence is required?
 • Who recommends?
 • Who decides?
 • Who executes?
-• What is each role allowed to change?
-• When must the case escalate?
-• What record proves that the decision was valid?
+• What is the authority limit?
+• When does it escalate?
+• What decision record must remain?
 
-I call this a decision contract.
+Try this with one real exception.
 
-Here is a practical test you can run today:
+Ask two experienced people to write those eight answers independently.
 
-Pick one real exception from your process. Ask two experienced people to complete those eight lines independently.
+Where their answers differ, you have found hidden organization design—not a prompting problem.
 
-If their answers differ, adding an agent will not remove the ambiguity. It may simply execute one person’s unwritten interpretation faster.
-
-I built a two-minute experiment that turns the same RACI row into an executable decision contract:
+I built a short experiment that turns the same RACI row into a testable decision contract:
 
 https://yswami.github.io/LinkedInPosts/2026/week-03-agent-ready-organization/day2.html
 
-Tomorrow: If the decision is clear, which part should the human do—and which part should the agent do?
+Tomorrow: Once the decision is explicit, which part should the human do—and which part should the agent do?
 
 Fictional educational scenario. RACI is treated as a coordination tool, not dismissed as inherently ineffective. The broader hypothesis is research-informed, not presented as a proven causal law. Views are my own.
 

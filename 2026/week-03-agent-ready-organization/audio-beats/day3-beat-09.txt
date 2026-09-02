@@ -1,0 +1,1 @@
+Here, the agent can gather, analyse, recommend, execute after approval, and monitor.

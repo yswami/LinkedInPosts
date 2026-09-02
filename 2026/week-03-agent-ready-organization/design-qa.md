@@ -1,26 +1,50 @@
-# Day 2 design QA
+# Day 3 design QA
 
 ## Visual target
 
-Day 1's paper-theatre story and cover establish the series language: a 4:5 stage, deep-blue curtains, warm paper cards, coral accents, character cutouts, large editorial typography, and a compact progress rail.
+- Source visual: `local-output/agent-ready-organization-day2-reel-cover.jpg`
+- Implementation: `day3.html`, `day3-reel.html`, `day3.css`, `day3-reel.css`, `day3.js`, and `day3-reel.js`
+- Comparison artifact: `local-output/day2-day3-cover-comparison.jpg`
+- Target language: the established 4:5 paper theatre, warm editorial surface, deep-green reveal, coral/gold accents, character cutouts, serif headline, compact act marker, and progress rail.
 
-## Day 2 comparison
+## Page QA
 
-- Preserves the same stage framing, palette, typography, character scale, and paper-card treatment.
-- Reuses the recurring Accounts Payable, Procurement, Operations, and AI-agent characters for continuity.
-- Adds the RACI matrix and decision-contract artifacts without changing the visual grammar.
-- Uses the same 1080 x 1350 output and keeps all primary copy inside mobile-safe bounds.
-- Keeps the main interaction keyboard accessible and provides a deterministic capture path for video rendering.
+- Tested the landing page in the in-app browser at 390 × 844 and 1440 × 1000.
+- Mobile first viewport contains the series identity, complete headline, explanation, both primary actions, and the privacy boundary.
+- Confirmed `scrollWidth === innerWidth` at mobile and desktop sizes; no horizontal overflow.
+- Confirmed all three presets: OVER-DELEGATED at 40% fit, UNDER-DELEGATED at 20% fit, and READY TO TEST at 100% fit.
+- Confirmed incomplete evidence produces STOP — EVIDENCE GAP.
+- Confirmed copy status is announced and focus remains visible on the action.
+- Confirmed the page reports the educational and evidence boundaries and uses no account, API, analytics, or browser storage.
 
-## Functional and responsive checks
+## Reel QA
 
-- Lab tested at 390 x 844 and 1440 x 1000 with no horizontal overflow.
-- RACI preset correctly shows a complete participation map but a 0% executable decision contract.
-- Decision-contract preset correctly reaches 100%, exposes the ledger, and returns the READY TO TEST verdict.
-- Story choice works interactively and auto-selects the intended branch in capture mode.
-- Finale uses a semantic “compare” label rather than an unsupported symbol glyph.
-- Video output is fixed to square pixels at 1080 x 1350.
+- Inspected the Finance interruption, dark reveal, autonomy-envelope allocation, and closing rule at 27, 35.2, 44, and 57.5 seconds.
+- Confirmed seven scenes initialize successfully, the audio source resolves, and the animation reports ready with no browser errors.
+- Confirmed the established Day 2 visual language remains recognizable while the new Finance interruption and five-stage allocation create a distinct third act.
+- Confirmed no text clipping, character cropping, or horizontal overflow in the 4:5 stage.
+- Rendered at 63 seconds, 15 fps, H.264/AAC, 1080 × 1350, square pixels, and 4:5 display aspect ratio.
+- The cover remains legible at feed-preview size and retains the series composition.
 
-## Result
+## Five fidelity surfaces
 
-Passed. No open P0, P1, or P2 visual or interaction issues.
+- Layout: passed — editorial landing page and 4:5 stage preserve the established spacing and hierarchy.
+- Typography: passed — serif insight statements and compact sans labels match the series system.
+- Color and surfaces: passed — warm paper, deep green, coral, gold, and soft green are used consistently.
+- Characters and artifacts: passed — existing AI-agent and Finance cutouts are reused; cards and contract objects feel native to the series.
+- Interaction and motion: passed — presets, radios, copy, play, restart, seek, keyboard controls, deterministic capture, and reduced-motion behavior are present.
+
+## Audio QA
+
+- Narration uses Yogendra's calibrated `storyteller` profile, seed 7, and 1.0 tempo.
+- Eleven short semantic beats create intentional pauses instead of a continuous read.
+- Office ambience, confirmation tones, data ticks, a payment-release pulse, an abrupt Finance stop, a reveal swish, and a restrained resolution pad support the dramatic arc.
+- Integrated loudness is -16.0 LUFS, loudness range is 5.2 LU, and true peak is -1.4 dBFS.
+- The final upload file remains exactly 63 seconds.
+
+## History
+
+- Day 2 historical QA is preserved in `design-qa-day2.md`.
+- Day 3 adds a stage-specific autonomy model without changing the established series identity.
+
+final result: passed

@@ -10,11 +10,12 @@ https://yswami.github.io/LinkedInPosts/2026/week-03-agent-ready-organization/day
 
 ## Video
 
-- Story page: https://yswami.github.io/LinkedInPosts/2026/week-03-agent-ready-organization/day2-story.html
-- Upload file: `media/agent-ready-organization-day2-60s.mp4`
+- Local interactive reel: `day2-reel.html`
+- Upload file: `local-output/agent-ready-organization-day2-reel.mp4`
 - Captions: `day-02-captions.srt`
-- Cover: `media/agent-ready-organization-day2-cover.jpg`
-- Format: character-driven paper theatre with an interactive choice on the web and an automatic decision-contract reveal in the upload.
+- Cover: `local-output/agent-ready-organization-day2-reel-cover.jpg`
+- Format: 63-second, audio-first workplace micro-drama with differentiated character voices, spatial sound design, animated actors, and an end-to-end decision-contract reveal. The narration carries the story; the screen carries the detailed role and contract labels.
+- Publishing note: the rendered MP4 and cover are local social-upload assets. They do not need to be committed to GitHub.
 
 ## Reader takeaway
 
@@ -28,7 +29,7 @@ Research links are included in the Day 2 experiment.
 
 ## Accessibility
 
-Upload the SRT file with the video. The story page includes a complete transcript, keyboard-accessible player controls, and a decision point that pauses for the visitor.
+Upload the SRT file with the video. The local reel includes a complete transcript, keyboard-accessible player controls, a seek control, and reduced-motion support.
 
 ## Disclaimer
 

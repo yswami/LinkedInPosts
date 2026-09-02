@@ -5,3 +5,9 @@
 # Never commit local authentication material.
 *.pem
 *.key
+
+# Local social-media render outputs and voice auditions are upload/review assets,
+# not GitHub Pages dependencies.
+2026/week-03-agent-ready-organization/local-output/
+2026/week-03-agent-ready-organization/media/*-preview-*
+2026/week-03-agent-ready-organization/day-02-audio-preview.txt

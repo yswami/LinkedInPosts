@@ -26,11 +26,20 @@ The fictional invoice scenario compares the same agent operating under an ambigu
 
 Day 2 preserves RACI as a coordination tool, then tests the narrower claim that participation labels do not automatically encode an executable decision. The lab adds trigger, evidence, recommendation, decision, execution, authority limit, escalation, and retained decision record.
 
+## Day 3 · Autonomy is not a switch. It is an envelope.
+
+- Read the [LinkedIn-ready post](day-03-linkedin-post.md).
+- Run the [Autonomy Envelope Lab](https://yswami.github.io/LinkedInPosts/2026/week-03-agent-ready-organization/day3.html).
+- Watch the [63-second interactive micro-drama](https://yswami.github.io/LinkedInPosts/2026/week-03-agent-ready-organization/day3-reel.html).
+- Use the [Day 3 publishing package](day-03-publishing-package.md).
+
+Day 3 separates an end-to-end job into evidence gathering, recommendation, decision, execution, and monitoring. It then allocates authority stage by stage using impact, reversibility, evidence sufficiency, policy coverage, and novelty.
+
 ## Planned arc
 
 1. Diagnose organizational ambiguity before blaming the agent.
 2. Separate roles, responsibilities, decision rights, and accountability. **Complete.**
-3. Redesign the division of labour between humans and agents.
+3. Redesign the division of labour between humans and agents. **Complete.**
 4. Measure organizational readiness separately from model capability.
 5. Build an adaptable organizational interface for human-agent work.
 

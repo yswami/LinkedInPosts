@@ -1,17 +1,25 @@
-Tuesday morning, leadership says the problem is fixed. They add one RACI row.
+“Payment blocked.”
 
-Resolve invoice exception. Accounts Payable: responsible. Procurement: accountable. Operations: consulted. Finance: informed.
+Leadership had an answer: “We added a RACI.”
 
-The agent routes the case to Procurement.
+Four roles. One clean diagram.
 
-Procurement replies: “I own the supplier relationship. I am not authorized to release payment.”
+The agent follows the “A.”
 
-Accounts Payable can block payment, but cannot accept the variance. Finance owns the control, but was only informed. Operations still sees a forty-eight-hour supply risk.
+Procurement replies: “I own the supplier relationship. I don’t own payment release.”
 
-The cast is named. The decision is not.
+Finance owns the control. Operations sees the supply risk. Accounts Payable can stop the invoice.
 
-A RACI can clarify participation. But an agent also needs a decision contract: trigger, evidence, recommender, decider, executor, authority limit, escalation path, and decision record.
+Everyone has a letter.
 
-Here is the practical test. Pick one real exception. Ask who recommends, who decides, who executes, under what limit, using what evidence, and what happens when the rule and the outcome conflict.
+No one has the decision.
 
-If those answers live only in people’s heads, the agent will not remove the ambiguity. It may simply execute one unwritten interpretation faster.
+The missing artifact isn’t another role map. It’s a decision contract.
+
+Try this with one real exception. Ask two experienced people: who decides, who acts, within what limit, using what evidence?
+
+Compare their answers.
+
+Where they disagree, you found hidden organization design.
+
+Make it explicit before the agent executes.

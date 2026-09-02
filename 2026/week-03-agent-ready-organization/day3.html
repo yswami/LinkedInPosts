@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Map an autonomy envelope for a fictional enterprise decision—stage by stage, not job by job.">
+  <meta property="og:title" content="Autonomy is not a switch. It is an envelope.">
+  <meta property="og:description" content="Test who should gather, recommend, decide, execute, and monitor one fictional invoice exception.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yswami.github.io/LinkedInPosts/2026/week-03-agent-ready-organization/day3.html">
+  <link rel="canonical" href="https://yswami.github.io/LinkedInPosts/2026/week-03-agent-ready-organization/day3.html">
+  <link rel="stylesheet" href="styles.css?v=20260901">
+  <link rel="stylesheet" href="day3.css?v=20260901">
+  <title>Autonomy Envelope Lab · Day 3</title>
+</head>
+<body>
+  <a class="skip-link" href="#experiment">Skip to the experiment</a>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="The Agent-Ready Organization home">
+      <span>AO</span>
+      <strong>The Agent-Ready Organization</strong>
+    </a>
+    <nav aria-label="Page navigation">
+      <a href="#method">The method</a>
+      <a href="#research">Research notes</a>
+      <a href="day3-reel.html">Watch the story</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero day3-hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Day 3 of 5 · A three-minute allocation experiment</p>
+        <h1 id="page-title">Autonomy is not a switch. It is an envelope.</h1>
+        <p class="hero-lead">A decision contract makes the work legible. It does not automatically give an agent every decision and action inside that work.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#experiment">Map the autonomy envelope</a>
+          <a class="button secondary" href="day3-reel.html">Watch the 63-second story</a>
+        </div>
+        <p class="privacy-note">Fictional scenario · No sign-in · No API · Nothing stored</p>
+      </div>
+
+      <article class="autonomy-teaser" aria-label="Fictional invoice exception">
+        <div class="teaser-topline"><span>INVOICE 447</span><span>Decision contract defined</span></div>
+        <div class="teaser-question">“Let the agent handle it end-to-end.”</div>
+        <div class="teaser-stages" aria-hidden="true">
+          <span>Gather</span><span>Recommend</span><span>Decide</span><span>Execute</span><span>Monitor</span>
+        </div>
+        <p>One instruction. Five different transfers of authority.</p>
+      </article>
+    </section>
+
+    <section class="experiment day3-experiment" id="experiment" aria-labelledby="experiment-title">
+      <div class="section-heading">
+        <p class="eyebrow">The experiment</p>
+        <h2 id="experiment-title">Delegate the stage—not the whole job.</h2>
+        <p>Choose who should lead each stage. Then test the allocation against the actual decision context.</p>
+      </div>
+
+      <div class="experiment-toolbar" aria-label="Allocation presets">
+        <button class="preset active" id="load-full" type="button" aria-pressed="true">Give the agent everything</button>
+        <button class="preset" id="load-human" type="button" aria-pressed="false">Keep everything human</button>
+        <button class="preset" id="load-bounded" type="button" aria-pressed="false">Load bounded collaboration</button>
+      </div>
+
+      <div class="autonomy-layout">
+        <form class="autonomy-form" id="autonomy-form">
+          <section class="allocation-panel" aria-labelledby="allocation-title">
+            <div class="panel-heading"><span>01</span><div><h3 id="allocation-title">Allocate the work</h3><p>Each stage can use a different human–agent configuration.</p></div></div>
+
+            <div class="stage-row" data-stage-row="gather">
+              <div><span>1</span><strong>Gather evidence</strong><small>Retrieve PO, receipt, invoice and supply data.</small></div>
+              <label><span class="sr-only">Who leads evidence gathering?</span><select name="gather"><option value="human">Human</option><option value="joint">Shared review</option><option value="gated">Agent after approval</option><option value="agent" selected>Agent</option></select></label>
+            </div>
+            <div class="stage-row" data-stage-row="recommend">
+              <div><span>2</span><strong>Analyse and recommend</strong><small>Calculate variance, compare rules and propose options.</small></div>
+              <label><span class="sr-only">Who leads analysis and recommendation?</span><select name="recommend"><option value="human">Human</option><option value="joint">Shared review</option><option value="gated">Agent after approval</option><option value="agent" selected>Agent</option></select></label>
+            </div>
+            <div class="stage-row" data-stage-row="decide">
+              <div><span>3</span><strong>Decide the exception</strong><small>Accept, reject or escalate the commercial variance.</small></div>
+              <label><span class="sr-only">Who decides the exception?</span><select name="decide"><option value="human">Human</option><option value="joint">Shared review</option><option value="gated">Agent after approval</option><option value="agent" selected>Agent</option></select></label>
+            </div>
+            <div class="stage-row" data-stage-row="execute">
+              <div><span>4</span><strong>Execute the decision</strong><small>Hold or release payment and record the approval.</small></div>
+              <label><span class="sr-only">Who executes the decision?</span><select name="execute"><option value="human">Human</option><option value="joint">Shared review</option><option value="gated">Agent after approval</option><option value="agent" selected>Agent</option></select></label>
+            </div>
+            <div class="stage-row" data-stage-row="monitor">
+              <div><span>5</span><strong>Monitor the outcome</strong><small>Track payment, supply impact, SLA and exceptions.</small></div>
+              <label><span class="sr-only">Who monitors the outcome?</span><select name="monitor"><option value="human">Human</option><option value="joint">Shared review</option><option value="gated">Agent after approval</option><option value="agent" selected>Agent</option></select></label>
+            </div>
+          </section>
+
+          <section class="context-panel" aria-labelledby="context-title">
+            <div class="panel-heading"><span>02</span><div><h3 id="context-title">Describe the decision context</h3><p>Autonomy should change when the context changes.</p></div></div>
+            <fieldset><legend>Potential impact</legend><label><input type="radio" name="impact" value="low"><span>Low</span></label><label><input type="radio" name="impact" value="high" checked><span>High</span></label></fieldset>
+            <fieldset><legend>Reversibility</legend><label><input type="radio" name="reversible" value="yes"><span>Fully reversible</span></label><label><input type="radio" name="reversible" value="partial" checked><span>Partial or costly</span></label></fieldset>
+            <fieldset><legend>Evidence</legend><label><input type="radio" name="evidence" value="complete" checked><span>Complete</span></label><label><input type="radio" name="evidence" value="incomplete"><span>Incomplete</span></label></fieldset>
+            <fieldset><legend>Policy coverage</legend><label><input type="radio" name="policy" value="covered"><span>Clearly covered</span></label><label><input type="radio" name="policy" value="exception" checked><span>Exception or conflict</span></label></fieldset>
+            <fieldset><legend>Novelty</legend><label><input type="radio" name="novelty" value="familiar"><span>Familiar pattern</span></label><label><input type="radio" name="novelty" value="novel" checked><span>Novel or changing</span></label></fieldset>
+          </section>
+
+          <div class="form-actions">
+            <button class="button primary" type="submit">Evaluate the autonomy envelope</button>
+            <button class="text-button" type="reset">Reset</button>
+          </div>
+        </form>
+
+        <aside class="envelope-result" id="envelope-result" tabindex="-1" aria-labelledby="result-title">
+          <div class="result-kicker"><span>Autonomy-envelope verdict</span><strong id="fit-score">40% fit</strong></div>
+          <div class="result-status stop" id="result-status">OVER-DELEGATED</div>
+          <h3 id="result-title">The agent has more authority than this decision context supports.</h3>
+          <p id="result-copy">Evidence gathering and recommendation can be automated. The high-impact exception still needs a named human decision and a gated execution.</p>
+
+          <div class="recommended-envelope">
+            <div class="gap-heading"><strong>Recommended envelope for this context</strong><span id="mismatch-count">3 changes</span></div>
+            <ol id="recommended-list"></ol>
+          </div>
+
+          <div class="control-note">
+            <strong>The critical distinction</strong>
+            <p>Agency is what the system can do. Autonomy is how independently it may do it in this context.</p>
+          </div>
+
+          <div class="copy-block">
+            <label for="envelope-output">Working autonomy-envelope statement</label>
+            <textarea id="envelope-output" rows="10" readonly></textarea>
+            <button class="button secondary" id="copy-envelope" type="button">Copy the envelope</button>
+            <span id="copy-status" role="status" aria-live="polite"></span>
+          </div>
+
+          <p class="experiment-boundary"><strong>Boundary:</strong> this evaluates allocation logic, not model accuracy, security, integration reliability, legal compliance, or production readiness.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="idea" id="method" aria-labelledby="method-title">
+      <div class="section-heading">
+        <p class="eyebrow">The autonomy-envelope method</p>
+        <h2 id="method-title">Five questions before granting more autonomy</h2>
+      </div>
+      <div class="idea-grid five-gates">
+        <article><span>01</span><h3>Impact</h3><p>What happens financially, operationally or to people if the action is wrong?</p></article>
+        <article><span>02</span><h3>Reversibility</h3><p>Can the organization safely undo the action, and at what cost?</p></article>
+        <article><span>03</span><h3>Evidence</h3><p>Can the required facts be verified before the action is committed?</p></article>
+        <article><span>04</span><h3>Coverage</h3><p>Does an approved rule cover this situation without hidden interpretation?</p></article>
+        <article><span>05</span><h3>Novelty</h3><p>Is this a familiar pattern, or an exception the operating model has not learned yet?</p></article>
+      </div>
+    </section>
+
+    <section class="research" id="research" aria-labelledby="research-title">
+      <div class="section-heading compact">
+        <p class="eyebrow">Research notes</p>
+        <h2 id="research-title">Why allocation should be stage-specific</h2>
+      </div>
+      <div class="research-grid">
+        <article><h3>Automation has different stages</h3><p>Classic human-factors research separates information acquisition, analysis, decision selection and action implementation—each of which may use a different automation level.</p><a href="https://doi.org/10.1109/3468.844354">Read the IEEE paper</a></article>
+        <article><h3>Oversight depends on context</h3><p>NIST recommends documenting task scope, knowledge limits, risk tolerance, human–AI roles, oversight and intervention throughout the lifecycle.</p><a href="https://airc.nist.gov/airmf-resources/airmf/5-sec-core/">Explore the NIST AI RMF Core</a></article>
+        <article><h3>Agency and autonomy are different</h3><p>Emerging work distinguishes what an agent can do from how independently it may act, and describes checkpoints, escalation, tool fencing and staged writes as control tactics.</p><a href="https://arxiv.org/abs/2605.12105">Read the 2026 preprint</a></article>
+      </div>
+      <p class="research-caution">This page synthesizes those ideas into an educational design exercise. The five-gate envelope is not presented as a validated universal scoring model.</p>
+    </section>
+
+    <section class="guardrail" aria-label="Experiment guardrail">
+      <strong>Do not confuse a human click with meaningful oversight.</strong>
+      <p>The reviewer needs the authority, evidence, time and interface to detect a problem and intervene before the action becomes irreversible.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Independent educational project · Fictional example · No customer data · Not a validated assessment instrument</p>
+    <a href="https://github.com/yswami/LinkedInPosts/tree/main/2026/week-03-agent-ready-organization">View source on GitHub</a>
+  </footer>
+
+  <script src="day3.js?v=20260901"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+1
+00:00:00,600 --> 00:00:04,000
+By Wednesday, the decision contract
+was finally clear.
+
+2
+00:00:04,500 --> 00:00:09,000
+Leadership made the obvious leap:
+“Good. Let the agent handle the rest.”
+
+3
+00:00:10,000 --> 00:00:16,500
+The agent gathered the evidence. Compared the records.
+Recommended an override.
+
+4
+00:00:17,000 --> 00:00:20,000
+Then it moved toward payment release.
+
+5
+00:00:21,000 --> 00:00:24,500
+Finance interrupted:
+“Stop. Who authorized that?”
+
+6
+00:00:25,500 --> 00:00:31,500
+The contract defined the decision.
+It did not define how far the agent could go.
+
+7
+00:00:33,000 --> 00:00:37,000
+Autonomy isn’t a switch.
+It is an envelope.
+
+8
+00:00:38,000 --> 00:00:48,500
+For each stage, ask: what is the impact? Can it be reversed?
+Is the evidence complete? Does policy cover this case? Is it novel?
+
+9
+00:00:49,000 --> 00:00:56,500
+Here, the agent can gather, analyse, recommend,
+execute after approval, and monitor.
+
+10
+00:00:56,500 --> 00:01:00,000
+The human still owns
+the high-impact exception.
+
+11
+00:01:00,000 --> 00:01:03,000
+Delegate the stage,
+not the whole job.

@@ -1,0 +1,3 @@
+“Payment blocked.”
+
+Leadership responds: “No problem. We added a RACI.”

@@ -1,0 +1,23 @@
+By Wednesday, the decision contract was finally clear.
+
+Leadership made the obvious leap: “Good. Let the agent handle the rest.”
+
+The agent gathered the evidence. Compared the records. Recommended an override.
+
+Then it moved toward payment release.
+
+Finance interrupted: “Stop. Who authorized that?”
+
+The contract defined the decision.
+
+It did not define how far the agent could go.
+
+Autonomy isn’t a switch. It is an envelope.
+
+For each stage, ask: what is the impact? Can it be reversed? Is the evidence complete? Does policy cover this case? Is it novel?
+
+Here, the agent can gather, analyse, recommend, execute after approval, and monitor.
+
+The human still owns the high-impact exception.
+
+Delegate the stage, not the whole job.
