@@ -35,12 +35,21 @@ Day 2 preserves RACI as a coordination tool, then tests the narrower claim that 
 
 Day 3 separates an end-to-end job into evidence gathering, recommendation, decision, execution, and monitoring. It then allocates authority stage by stage using impact, reversibility, evidence sufficiency, policy coverage, and novelty.
 
+## Day 4 · The agent is ready. Is the organization?
+
+- Read the [LinkedIn-ready post](day-04-linkedin-post.md).
+- Run the [Operating-Readiness Drill](https://yswami.github.io/LinkedInPosts/2026/week-03-agent-ready-organization/day4.html).
+- Watch the [63-second interactive micro-drama](https://yswami.github.io/LinkedInPosts/2026/week-03-agent-ready-organization/day4-reel.html).
+- Use the [Day 4 publishing package](day-04-publishing-package.md).
+
+Day 4 holds the fictional agent’s recognition and recommendation capability constant, then tests whether the operating model can provide an available decision owner, usable evidence, meaningful intervention, controlled execution and recovery, and a learning loop.
+
 ## Planned arc
 
 1. Diagnose organizational ambiguity before blaming the agent.
 2. Separate roles, responsibilities, decision rights, and accountability. **Complete.**
 3. Redesign the division of labour between humans and agents. **Complete.**
-4. Measure organizational readiness separately from model capability.
+4. Measure organizational readiness separately from model capability. **Complete.**
 5. Build an adaptable organizational interface for human-agent work.
 
 ## Research foundation

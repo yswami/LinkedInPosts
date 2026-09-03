@@ -1,0 +1,31 @@
+1
+00:00:00,000 --> 00:00:05,200
+The agent was ready.
+
+2
+00:00:05,200 --> 00:00:12,000
+It found the mismatch, showed the evidence, named the uncertainty, and recommended a safe next step.
+
+3
+00:00:12,000 --> 00:00:17,400
+Then it was Friday, 4:50 PM.
+
+4
+00:00:17,400 --> 00:00:28,400
+The decision owner was offline. The evidence source had not refreshed. The reviewer could see the recommendation, but could not act on it.
+
+5
+00:00:28,400 --> 00:00:34,000
+The agent did not fail. The operating system around the agent did.
+
+6
+00:00:34,000 --> 00:00:43,000
+Model capability asks: can the agent recognize and recommend? Operating readiness asks: can people and systems receive, decide, act, reverse, and learn when it matters?
+
+7
+00:00:43,000 --> 00:00:56,000
+Before a pilot, test five things: a named owner, usable evidence, a real ability to intervene, safe execution and recovery, and a learning loop.
+
+8
+00:00:56,000 --> 00:01:03,000
+A capable agent is a requirement. An operable organization is the test.

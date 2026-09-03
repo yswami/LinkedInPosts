@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Test whether a fictional organization is ready to operate an AI-agent recommendation—not just generate one.">
+  <meta property="og:title" content="The agent is ready. Is the organization?">
+  <meta property="og:description" content="A five-signal readiness drill for a fictional enterprise exception.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yswami.github.io/LinkedInPosts/2026/week-03-agent-ready-organization/day4.html">
+  <link rel="canonical" href="https://yswami.github.io/LinkedInPosts/2026/week-03-agent-ready-organization/day4.html">
+  <link rel="stylesheet" href="styles.css?v=20260903">
+  <link rel="stylesheet" href="day4.css?v=20260903">
+  <title>Agent-Readiness Drill · Day 4</title>
+</head>
+<body>
+  <a class="skip-link" href="#experiment">Skip to the experiment</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="The Agent-Ready Organization home"><span>AO</span><strong>The Agent-Ready Organization</strong></a>
+    <nav aria-label="Page navigation"><a href="#method">The five signals</a><a href="#research">Research notes</a><a href="day4-reel.html">Watch the story</a></nav>
+  </header>
+  <main>
+    <section class="hero day4-hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Day 4 of 5 · A five-minute operating-readiness drill</p>
+        <h1 id="page-title">The agent is ready.<br>Is the organization?</h1>
+        <p class="hero-lead">Model capability tells us whether an agent can recognize and recommend. Organizational readiness asks whether people and systems can receive, decide, act, reverse, and learn from that recommendation.</p>
+        <div class="hero-actions"><a class="button primary" href="#experiment">Run the Friday drill</a><a class="button secondary" href="day4-reel.html">Watch the 63-second story</a></div>
+        <p class="privacy-note">Fictional scenario · No sign-in · No API · Nothing stored</p>
+      </div>
+      <article class="friday-teaser" aria-label="Fictional Friday exception scenario">
+        <div class="teaser-topline"><span>FRIDAY · 16:50</span><span>INVOICE 447</span></div>
+        <p class="teaser-score">Recommendation quality<br><strong>HIGH</strong></p>
+        <div class="teaser-action"><span>Recommended next step</span><strong>Hold payment · request documented override</strong></div>
+        <p class="teaser-question">The recommendation is sound. Can the organization do anything useful with it before close?</p>
+      </article>
+    </section>
+
+    <section class="experiment day4-experiment" id="experiment" aria-labelledby="experiment-title">
+      <div class="section-heading"><p class="eyebrow">The experiment</p><h2 id="experiment-title">Test the operating system around the agent.</h2><p>Keep the fictional agent capable. Change only the organization’s ability to operate its recommendation.</p></div>
+      <div class="experiment-toolbar" aria-label="Readiness presets">
+        <button class="preset active" id="load-friday" type="button" aria-pressed="true">Load Friday failure</button>
+        <button class="preset" id="load-shadow" type="button" aria-pressed="false">Load shadow-mode setup</button>
+        <button class="preset" id="load-pilot" type="button" aria-pressed="false">Load bounded pilot</button>
+      </div>
+      <div class="readiness-layout">
+        <form class="readiness-form" id="readiness-form">
+          <section class="capability-panel" aria-labelledby="capability-title">
+            <div class="panel-heading"><span>MODEL</span><div><h3 id="capability-title">Hold model capability constant</h3><p>This is deliberately not a model benchmark.</p></div></div>
+            <div class="capability-readout"><strong>Recognizes the exception</strong><span>Yes</span><strong>Shows evidence and uncertainty</strong><span>Yes</span><strong>Recommends a next step</strong><span>Yes</span></div>
+            <p class="capability-note">The drill asks a different question: can the human operating model make that recommendation safe and useful?</p>
+          </section>
+          <section class="signals-panel" aria-labelledby="signals-title">
+            <div class="panel-heading"><span>01</span><div><h3 id="signals-title">Set the five operating signals</h3><p>Choose what is true at the moment a material exception arrives.</p></div></div>
+            <fieldset><legend><span>1</span> Decision owner</legend><p>Is someone named, available, and empowered to decide?</p><label><input type="radio" name="owner" value="ready"><span>Named owner + backup + authority</span></label><label><input type="radio" name="owner" value="weak" checked><span>Owner named, but unavailable or unclear</span></label></fieldset>
+            <fieldset><legend><span>2</span> Usable evidence</legend><p>Can the reviewer see trusted, current evidence and its limits?</p><label><input type="radio" name="evidence" value="ready"><span>Current sources, freshness, and gaps visible</span></label><label><input type="radio" name="evidence" value="weak" checked><span>Evidence is stale, partial, or hard to verify</span></label></fieldset>
+            <fieldset><legend><span>3</span> Ability to intervene</legend><p>Can the reviewer act in time, with a real override path?</p><label><input type="radio" name="intervene" value="ready"><span>Time, authority, and override are available</span></label><label><input type="radio" name="intervene" value="weak" checked><span>Review exists only on paper</span></label></fieldset>
+            <fieldset><legend><span>4</span> Safe execution</legend><p>Can approval be executed, recorded, and reversed if necessary?</p><label><input type="radio" name="execute" value="ready"><span>Gated execution + audit record + recovery path</span></label><label><input type="radio" name="execute" value="weak" checked><span>Execution or recovery is unclear</span></label></fieldset>
+            <fieldset><legend><span>5</span> Learning loop</legend><p>Will the exception and outcome improve the next decision?</p><label><input type="radio" name="learn" value="ready"><span>Outcome, overrides, and misses are reviewed</span></label><label><input type="radio" name="learn" value="weak" checked><span>The incident disappears after resolution</span></label></fieldset>
+          </section>
+          <div class="form-actions"><button class="button primary" type="submit">Evaluate operating readiness</button><button class="text-button" type="reset">Reset</button></div>
+        </form>
+        <aside class="readiness-result" id="readiness-result" tabindex="-1" aria-labelledby="result-title">
+          <div class="result-kicker"><span>Operating-readiness verdict</span><strong id="readiness-score">0/5 signals</strong></div>
+          <div class="result-status stop" id="result-status">NOT READY TO PILOT</div>
+          <h3 id="result-title">A capable recommendation has nowhere reliable to land.</h3>
+          <p id="result-copy">The agent can identify the exception. It cannot create an available decision owner, current evidence, an override path, or an accountable recovery process.</p>
+          <div class="signal-result"><div class="gap-heading"><strong>What the organization can operate now</strong><span id="signal-summary">0 ready</span></div><ol id="signal-list"></ol></div>
+          <div class="control-note"><strong>The distinction that matters</strong><p><b>Model capability</b> is about recognizing and recommending. <b>Operating readiness</b> is about whether the surrounding organization can make the recommendation safe, timely, and accountable.</p></div>
+          <div class="copy-block"><label for="readiness-output">Working readiness brief</label><textarea id="readiness-output" rows="12" readonly></textarea><button class="button secondary" id="copy-readiness" type="button">Copy the readiness brief</button><span id="copy-status" role="status" aria-live="polite"></span></div>
+          <p class="experiment-boundary"><strong>Boundary:</strong> this educational drill does not assess model accuracy, security, integration reliability, legal compliance, or production readiness.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="idea" id="method" aria-labelledby="method-title"><div class="section-heading"><p class="eyebrow">The operating-readiness method</p><h2 id="method-title">Five signals before a bounded pilot</h2><p>Each signal describes a capability the organization must supply. An agent cannot supply it by sounding confident.</p></div><div class="idea-grid readiness-signals"><article><span>01</span><h3>Owner</h3><p>A named decision owner, backup, and authority limit for the actual operating window.</p></article><article><span>02</span><h3>Evidence</h3><p>Source access, freshness, provenance, and uncertainty visible to the person deciding.</p></article><article><span>03</span><h3>Intervene</h3><p>Enough time, authority, and interface support to pause, question, or override.</p></article><article><span>04</span><h3>Execute</h3><p>A controlled action, retained record, and recovery path—not merely an approval click.</p></article><article><span>05</span><h3>Learn</h3><p>Outcome and exceptions feed review, control changes, and the next operating cycle.</p></article></div></section>
+
+    <section class="research" id="research" aria-labelledby="research-title"><div class="section-heading compact"><p class="eyebrow">Research notes</p><h2 id="research-title">Why readiness is more than model quality</h2></div><div class="research-grid"><article><h3>Governance is operational</h3><p>NIST’s AI RMF treats governance as a cross-cutting function: structures, processes, trained people, impact assessment, and ongoing review—not a one-time model gate.</p><a href="https://airc.nist.gov/airmf-resources/airmf/5-sec-core/">Explore the NIST AI RMF Core</a></article><article><h3>Roles and oversight need definition</h3><p>The framework calls for clear roles and communication, differentiated human–AI configurations, and defined, assessed human oversight.</p><a href="https://airc.nist.gov/airmf-resources/airmf/5-sec-core/">Read the governance outcomes</a></article><article><h3>Deployment must learn</h3><p>NIST also calls for post-deployment monitoring, appeal and override mechanisms, incident response, recovery, change management, and continual improvement.</p><a href="https://airc.nist.gov/airmf-resources/airmf/5-sec-core/">Read the manage outcomes</a></article></div><p class="research-caution">This page translates those principles into an educational readiness drill. It is not a validated maturity model or certification.</p></section>
+    <section class="guardrail" aria-label="Experiment guardrail"><strong>Do not label a pilot “human overseen” if the human cannot realistically intervene.</strong><p>Availability, evidence, authority, execution and learning must exist during the moment that matters—not only in a policy document.</p></section>
+  </main>
+  <footer><p>Independent educational project · Fictional example · No customer data · Not a validated assessment instrument</p><a href="https://github.com/yswami/LinkedInPosts/tree/main/2026/week-03-agent-ready-organization">View source on GitHub</a></footer>
+  <script src="day4.js?v=20260903"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+The agent was ready.
+
+It found the mismatch, showed the evidence, named the uncertainty, and recommended a safe next step.
+
+Then it was Friday, 4:50 PM.
+
+The decision owner was offline.
+The evidence source had not refreshed.
+The reviewer could see the recommendation, but could not act on it.
+
+The agent did not fail.
+The operating system around the agent did.
+
+Model capability asks: can the agent recognize and recommend?
+
+Operating readiness asks: can people and systems receive, decide, act, reverse, and learn when it matters?
+
+Before a pilot, test five things:
+a named owner,
+usable evidence,
+a real ability to intervene,
+safe execution and recovery,
+and a learning loop.
+
+A capable agent is a requirement.
+
+An operable organization is the test.

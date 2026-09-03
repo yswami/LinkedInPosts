@@ -1,0 +1,1 @@
+Model capability asks: can the agent recognize and recommend? Operating readiness asks: can people and systems receive, decide, act, reverse, and learn when it matters?
