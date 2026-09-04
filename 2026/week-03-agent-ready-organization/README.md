@@ -44,13 +44,22 @@ Day 3 separates an end-to-end job into evidence gathering, recommendation, decis
 
 Day 4 holds the fictional agent’s recognition and recommendation capability constant, then tests whether the operating model can provide an available decision owner, usable evidence, meaningful intervention, controlled execution and recovery, and a learning loop.
 
-## Planned arc
+## Day 5 · Start with one decision. Earn the next move.
+
+- Read the [LinkedIn-ready post](day-05-linkedin-post.md).
+- Build a [One Decision Pilot card](https://yswami.github.io/LinkedInPosts/2026/week-03-agent-ready-organization/day5.html).
+- Watch the [63-second interactive series finale](https://yswami.github.io/LinkedInPosts/2026/week-03-agent-ready-organization/day5-reel.html).
+- Use the [Day 5 publishing package](day-05-publishing-package.md).
+
+Day 5 turns the series into a plain-language pilot playbook: pick one decision, explain it in five lines, divide the moves, set stop rules, rehearse a bad day, and let observed outcomes earn the next increase in authority.
+
+## Complete arc
 
 1. Diagnose organizational ambiguity before blaming the agent.
 2. Separate roles, responsibilities, decision rights, and accountability. **Complete.**
 3. Redesign the division of labour between humans and agents. **Complete.**
 4. Measure organizational readiness separately from model capability. **Complete.**
-5. Build an adaptable organizational interface for human-agent work.
+5. Build an adaptable organizational interface for human-agent work. **Complete.**
 
 ## Research foundation
 

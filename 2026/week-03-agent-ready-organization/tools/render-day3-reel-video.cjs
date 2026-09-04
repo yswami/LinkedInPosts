@@ -65,9 +65,9 @@ async function evaluate(client, expression) {
 
 async function main() {
   const root = path.resolve(__dirname, "..");
-  const htmlPath = path.join(root, "day3-reel.html");
-  const outputPath = path.resolve(process.argv[2] || path.join(root, "local-output", "agent-ready-organization-day3-reel-silent.mp4"));
-  const coverPath = path.resolve(process.argv[3] || path.join(root, "local-output", "agent-ready-organization-day3-reel-cover.jpg"));
+  const htmlPath = path.join(root, process.env.SERIES_HTML || "day3-reel.html");
+  const outputPath = path.resolve(process.argv[2] || path.join(root, "local-output", process.env.SERIES_OUTPUT || "agent-ready-organization-day3-reel-silent.mp4"));
+  const coverPath = path.resolve(process.argv[3] || path.join(root, "local-output", process.env.SERIES_COVER || "agent-ready-organization-day3-reel-cover.jpg"));
   const frameRate = positiveNumber(process.env.SERIES_FPS, 15);
   const outputWidth = positiveNumber(process.env.SERIES_WIDTH, 1080);
   const outputHeight = positiveNumber(process.env.SERIES_HEIGHT, 1350);

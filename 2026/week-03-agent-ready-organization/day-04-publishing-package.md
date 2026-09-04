@@ -15,7 +15,7 @@ https://yswami.github.io/LinkedInPosts/2026/week-03-agent-ready-organization/day
 - Captions: `day-04-captions.srt`
 - Cover: `local-output/agent-ready-organization-day4-reel-cover.jpg`
 - Format: 63-second audio-first workplace micro-drama. Screen text carries the incident landmarks and five operating signals; narration carries the connection.
-- Audio: Yogendra `storyteller` profile, semantic beats, intended mix target -16 LUFS integrated.
+- Audio: Yogendra `storyteller` profile with a custom ambient soundscape, clock motif, restrained scene accents, and automatic music ducking under narration. Mix target: -16 LUFS integrated.
 - Delivery target: H.264/AAC, 1080 × 1350, 4:5, square pixels.
 - Publishing note: rendered MP4 and cover are local upload assets; only source assets and web pages go to GitHub.
 

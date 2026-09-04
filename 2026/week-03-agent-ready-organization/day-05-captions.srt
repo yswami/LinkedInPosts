@@ -1,0 +1,39 @@
+1
+00:00:00,000 --> 00:00:08,320
+One invoice began the series: $84,600,
+a 6.2% mismatch, and 48 hours to act.
+
+2
+00:00:08,800 --> 00:00:16,000
+The question seemed simple: can the agent solve it?
+Each experiment exposed another organizational seam.
+
+3
+00:00:16,500 --> 00:00:22,900
+A vague instruction produced three answers.
+A RACI named people, but not the decision.
+
+4
+00:00:23,400 --> 00:00:30,440
+A clear decision still needed limits. A capable recommendation
+still needed an organization ready to act.
+
+5
+00:00:31,000 --> 00:00:37,480
+So: pick one decision. Explain it. Divide the moves.
+Set stop rules. Rehearse a bad day.
+
+6
+00:00:38,000 --> 00:00:43,840
+Then pilot it small, measure what happened,
+and let the results earn the next move.
+
+7
+00:00:44,400 --> 00:00:50,800
+The agent enters a human operating system.
+Organization design becomes part of its execution.
+
+8
+00:00:52,300 --> 00:01:00,700
+Clarity is not rigidity. Update the rules as work changes.
+Then ask: which decisions can humans and agents improve together?

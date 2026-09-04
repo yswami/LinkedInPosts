@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Turn one real decision into a small, testable AI-agent pilot card.">
+  <meta property="og:title" content="The One Decision Pilot">
+  <meta property="og:description" content="A plain-language, six-step playbook for starting an AI-agent pilot.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yswami.github.io/LinkedInPosts/2026/week-03-agent-ready-organization/day5.html">
+  <link rel="canonical" href="https://yswami.github.io/LinkedInPosts/2026/week-03-agent-ready-organization/day5.html">
+  <link rel="stylesheet" href="styles.css?v=20260904">
+  <link rel="stylesheet" href="day5.css?v=20260904">
+  <title>The One Decision Pilot · Day 5</title>
+</head>
+<body>
+  <a class="skip-link" href="#playbook">Skip to the playbook</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="The Agent-Ready Organization home"><span>AO</span><strong>The Agent-Ready Organization</strong></a>
+    <nav aria-label="Page navigation"><a href="#playbook">Build a pilot</a><a href="#how-it-works">How it works</a><a href="day5-reel.html">Watch the finale</a></nav>
+  </header>
+
+  <main>
+    <section class="hero day5-hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Day 5 of 5 · A practical takeaway</p>
+        <h1 id="page-title">Start with one decision.<br>Earn the next move.</h1>
+        <p class="hero-lead">You do not need an AI transformation plan to begin. Take one real decision and make it safe enough to test with people and an agent.</p>
+        <div class="hero-actions"><a class="button primary" href="#playbook">Build my pilot card</a><a class="button secondary" href="day5-reel.html">Watch the 63-second finale</a></div>
+        <p class="privacy-note">Fictional example · No sign-in · No API · Nothing stored</p>
+      </div>
+      <article class="pilot-teaser" aria-label="One Decision Pilot summary">
+        <p class="teaser-label">THE ONE DECISION PILOT</p>
+        <blockquote>“Should Invoice 447 be held, paid or escalated?”</blockquote>
+        <ol><li>Explain it</li><li>Divide the moves</li><li>Set stop rules</li><li>Rehearse failure</li><li>Measure and learn</li></ol>
+        <p><strong>The rule:</strong> the pilot must earn every increase in authority.</p>
+      </article>
+    </section>
+
+    <section class="experiment day5-experiment" id="playbook" aria-labelledby="playbook-title">
+      <div class="section-heading">
+        <p class="eyebrow">The interactive playbook</p>
+        <h2 id="playbook-title">Create a pilot card your team can understand.</h2>
+        <p>Use the example, replace it with your own decision, and copy the result. Plain language is a feature here.</p>
+      </div>
+      <div class="experiment-toolbar" aria-label="Playbook presets">
+        <button class="preset active" id="load-example" type="button" aria-pressed="true">Load the invoice example</button>
+        <button class="preset" id="start-blank" type="button" aria-pressed="false">Start with a blank card</button>
+      </div>
+
+      <div class="pilot-layout">
+        <form class="pilot-form" id="pilot-form">
+          <section class="pilot-step">
+            <div class="step-heading"><span>1</span><div><h3>Pick one decision</h3><p>Write it as a question. If it cannot fit in one sentence, make it smaller.</p></div></div>
+            <label for="decision">The decision</label><input id="decision" name="decision" type="text" value="Should Invoice 447 be held, paid or escalated?">
+          </section>
+
+          <section class="pilot-step">
+            <div class="step-heading"><span>2</span><div><h3>Explain it in five lines</h3><p>This is the shared instruction for the team and the agent.</p></div></div>
+            <div class="five-lines">
+              <label>What starts it?<input name="trigger" type="text" value="Mismatch exceeds 5% or supply is at risk."></label>
+              <label>What must be checked?<input name="evidence" type="text" value="Invoice, purchase order, receipt, contract and supplier warning."></label>
+              <label>Who says yes?<input name="owner" type="text" value="Finance Controller; Procurement Director is backup."></label>
+              <label>What may the agent do?<input name="allowed" type="text" value="Gather evidence, compare records and recommend a next step."></label>
+              <label>When must it stop?<input name="stop" type="text" value="Evidence is stale, owner is unavailable, or action would release payment."></label>
+            </div>
+          </section>
+
+          <section class="pilot-step">
+            <div class="step-heading"><span>3</span><div><h3>Divide the moves</h3><p>Choose who leads each part. Do not automate the whole job at once.</p></div></div>
+            <div class="move-grid" id="move-grid">
+              <label>Find<select name="move-find"><option>Human</option><option selected>Agent</option><option>Together</option></select></label>
+              <label>Check<select name="move-check"><option>Human</option><option>Agent</option><option selected>Together</option></select></label>
+              <label>Suggest<select name="move-suggest"><option>Human</option><option selected>Agent</option><option>Together</option></select></label>
+              <label>Decide<select name="move-decide"><option selected>Human</option><option>Agent</option><option>Together</option></select></label>
+              <label>Act<select name="move-act"><option selected>Human</option><option>Agent</option><option>Together</option></select></label>
+              <label>Watch<select name="move-watch"><option>Human</option><option selected>Agent</option><option>Together</option></select></label>
+            </div>
+          </section>
+
+          <section class="pilot-step">
+            <div class="step-heading"><span>4</span><div><h3>Set the stop rules</h3><p>When any checked condition occurs, the agent pauses and asks for help.</p></div></div>
+            <div class="check-grid">
+              <label><input type="checkbox" name="rule" value="Evidence is missing or stale" checked><span>Evidence is missing or stale</span></label>
+              <label><input type="checkbox" name="rule" value="The named owner and backup are unavailable" checked><span>Owner and backup are unavailable</span></label>
+              <label><input type="checkbox" name="rule" value="The case falls outside the written rule" checked><span>The case falls outside the rule</span></label>
+              <label><input type="checkbox" name="rule" value="The next action cannot be safely reversed" checked><span>The action cannot be safely reversed</span></label>
+            </div>
+          </section>
+
+          <section class="pilot-step rehearsal-step">
+            <div class="step-heading"><span>5</span><div><h3>Rehearse a bad day</h3><p>Try each failure before the pilot touches real work.</p></div></div>
+            <div class="rehearsal-buttons" role="group" aria-label="Failure rehearsal">
+              <button type="button" data-rehearsal="stale">Data is stale</button><button type="button" data-rehearsal="away">Owner is away</button><button type="button" data-rehearsal="wrong">Agent is wrong</button>
+            </div>
+            <div class="rehearsal-result" id="rehearsal-result" role="status" aria-live="polite"><strong>Choose a failure.</strong><p>The playbook will show the expected safe response.</p></div>
+          </section>
+
+          <section class="pilot-step">
+            <div class="step-heading"><span>6</span><div><h3>Let the pilot earn the next move</h3><p>Measure whether the decision improved—not how busy the agent looked.</p></div></div>
+            <div class="check-grid metric-checks">
+              <label><input type="checkbox" name="metric" value="Time to a decision" checked><span>Time to a decision</span></label>
+              <label><input type="checkbox" name="metric" value="Right-time escalations" checked><span>Right-time escalations</span></label>
+              <label><input type="checkbox" name="metric" value="Overrides and reasons" checked><span>Overrides and reasons</span></label>
+              <label><input type="checkbox" name="metric" value="Time to recover" checked><span>Time to recover</span></label>
+              <label><input type="checkbox" name="metric" value="Real business outcome" checked><span>Real business outcome</span></label>
+            </div>
+          </section>
+
+          <div class="form-actions"><button class="button primary" type="submit">Create my pilot card</button><button class="text-button" type="reset">Reset example</button></div>
+        </form>
+
+        <aside class="pilot-result" id="pilot-result" tabindex="-1" aria-labelledby="pilot-result-title">
+          <div class="result-topline"><span>ONE DECISION PILOT</span><strong id="card-progress">5/6 ready</strong></div>
+          <div class="result-status assist" id="pilot-status">REHEARSE BEFORE PILOT</div>
+          <h3 id="pilot-result-title">Your pilot fits on one page.</h3>
+          <p id="pilot-summary">The decision and boundaries are clear. Rehearse all three failures before using it with live work.</p>
+          <textarea id="pilot-output" rows="24" readonly aria-label="Generated pilot card"></textarea>
+          <button class="button secondary" id="copy-pilot" type="button">Copy the pilot card</button><span id="copy-status" role="status" aria-live="polite"></span>
+          <p class="experiment-boundary"><strong>Boundary:</strong> this is an educational planning aid, not legal, audit, security, risk, compliance, or production approval.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="idea" id="how-it-works" aria-labelledby="how-title">
+      <div class="section-heading"><p class="eyebrow">Why this order</p><h2 id="how-title">Small enough to learn. Clear enough to operate.</h2><p>Each step answers a question that a confident demo cannot answer for you.</p></div>
+      <div class="idea-grid simple-principles"><article><span>01</span><h3>Can we explain it?</h3><p>If the decision is unclear to people, the agent inherits the ambiguity.</p></article><article><span>02</span><h3>Can we stop it?</h3><p>A human role matters only when someone can pause, question, or reverse the work in time.</p></article><article><span>03</span><h3>Did it help?</h3><p>More completed actions are not success. Better decisions and business outcomes are.</p></article></div>
+    </section>
+
+    <section class="guardrail" aria-label="Pilot rule"><strong>Do not expand authority because the demo looked good.</strong><p>Let observed decisions, recoveries, and business outcomes earn the next move.</p></section>
+  </main>
+  <footer><p>Independent educational project · Fictional example · Nothing stored · Not a validated assessment instrument</p><a href="https://github.com/yswami/LinkedInPosts/tree/main/2026/week-03-agent-ready-organization">View the complete series on GitHub</a></footer>
+  <script src="day5.js?v=20260904"></script>
+</body>
+</html>
